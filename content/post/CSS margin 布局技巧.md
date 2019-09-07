@@ -7,7 +7,7 @@ draft: false
 
 `CSS` 里有一个重要的东西，叫 `CSS` 盒模型，它几乎能贯穿我们学习 `CSS` 的整个阶段，如下图所示，就是我们所说的盒子模型：
 
-[!![CSS Box model](https://mdn.mozillademos.org/files/8685/boxmodel-(3).png)]()
+![CSS Box model](https://mdn.mozillademos.org/files/8685/boxmodel-(3).png)
 
 (注：图片来源 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model) )
 
