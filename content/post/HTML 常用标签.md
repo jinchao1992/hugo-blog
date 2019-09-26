@@ -2,10 +2,15 @@
 title: "HTML 常用标签"
 date: 2019-08-22T23:01:15+08:00
 draft: false
+tags:
+- HTML
+keywords:
+- HTML常用标签
 ---
-## 前言
 
 最新的 `HTML5` 里标签大概有 110 个，但是如果让我们学完 110 个的话，对于大多数人来说可能还是比较困难的。工作中常用的也就那么几个，接下来我们介绍下几个常用的 HTML 标签。
+
+<!--more-->
 
 ## 常用标签
 
@@ -370,4 +375,3 @@ oImg.onerror = function() {
 ## 参考链接
 
 [阮一峰网道HTML篇](https://wangdoc.com/html/)
-

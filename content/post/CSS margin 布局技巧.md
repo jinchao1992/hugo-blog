@@ -2,14 +2,21 @@
 title: "CSS Margin 布局技巧"
 date: 2019-08-11T14:28:00+08:00
 draft: false
+tags:
+- CSS
+- Margin
+keywords:
+- CSS Margin
 ---
-## 前言
 
 `CSS` 里有一个重要的东西，叫 `CSS` 盒模型，它几乎能贯穿我们学习 `CSS` 的整个阶段，如下图所示，就是我们所说的盒子模型：
+
+<!--more-->
 
 ![CSS Box model](https://mdn.mozillademos.org/files/8685/boxmodel-(3).png)
 
 (注：图片来源 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model) )
+
 
 "盒模型"中最外层透明的区域就是 `margin`所在，它会将其他区域从盒子模型内容中推开。
 

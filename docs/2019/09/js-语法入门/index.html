@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.56.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="靳超同学">
+<meta name="keywords" content="JS 入门">
+<meta name="description" content="任何语言都有语法，那么先从语法入门来看看 JS 的世界吧。">
+
+
+<meta property="og:description" content="任何语言都有语法，那么先从语法入门来看看 JS 的世界吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS 语法入门">
+<meta name="twitter:title" content="JS 语法入门">
+<meta property="og:url" content="https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">
+<meta property="twitter:url" content="https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">
+<meta property="og:site_name" content="小鱼儿的小站">
+<meta property="og:description" content="任何语言都有语法，那么先从语法入门来看看 JS 的世界吧。">
+<meta name="twitter:description" content="任何语言都有语法，那么先从语法入门来看看 JS 的世界吧。">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2019-09-13T10:09:02">
+  
+  
+    <meta property="article:modified_time" content="2019-09-13T10:09:02">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="JS">
+    
+      <meta property="article:tag" content="JS 语法">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+  <meta property="twitter:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+
+
+    <title>JS 语法入门</title>
+
+    <link rel="icon" href="https://jinchao1992.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://jinchao1992.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://jinchao1992.github.io/">小鱼儿的小站</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://jinchao1992.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://jinchao1992.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">靳超同学</h4>
+        
+          <h5 class="sidebar-profile-bio">前端开发</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/jinchao1992" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      JS 语法入门
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-09-13T10:09:02&#43;08:00">
+        
+  
+  
+  
+  
+    2019年9月13日
+  
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>任何语言都有语法，那么先从语法入门来看看 <code>JS</code> 的世界吧。</p>
+
+<h2 id="表达式与语句">表达式与语句</h2>
+
+<ul>
+<li><p>两者区别</p>
+
+<ul>
+<li>表达式一般都有值，语句可能有也可能没有；</li>
+<li>语句主要为了进行某种操作，一般情况下不需要返回值；</li>
+<li>表达式是为了得到返回值，一定会返回一个值；在 <code>Javascript</code> 中，预期为值的地方都可以使用表达式。如，赋值语句的等号右边，预期是一个值，但是可以放置各种表达式；</li>
+<li><strong>注意：表达式不需要分号结尾。表达式如果添加了分号，则 <code>Javascript</code> 会将表达式视为语句</strong></li>
+</ul></li>
+
+<li><p>表达式举例</p>
+
+<ul>
+<li><code>1 + 2</code> 表达式的值为 <code>3</code>;</li>
+<li><code>add(1,2)</code> 表达式的值为函数的返回值；<strong>注意：只有函数有返回值</strong></li>
+<li><code>console.log</code> 表达式的值为函数本身；</li>
+<li><code>console.log(3)</code> 表达式的值为 <code>undefined</code>; 因为 <code>console.log()</code> 是函数调用并没有返回；</li>
+</ul></li>
+
+<li><p>语句举例</p>
+
+<ul>
+<li><p><code>let a = 1</code> 是一个赋值语句；</p></li>
+
+<li><p>语句是以分号结束的。多个语句可以写在一行内。</p>
+
+<pre><code class="language-javascript">var a = 1 + 3; var b = 'abc';
+</code></pre></li>
+
+<li><p>分号前面可以没有内容，<code>JavaScript</code> 引擎会把它视为空语句。</p>
+
+<pre><code class="language-js">;;;
+// 代表三个空语句
+</code></pre></li>
+</ul></li>
+</ul>
+
+<h3 id="注意事项">注意事项</h3>
+
+<ul>
+<li><code>Javascript</code> 是大小写敏感的。如： <code>Object</code> 与 <code>object</code> 是不同的；</li>
+<li>大部分空格没有实际意义，写一个空格和写一堆空格一样，但是切记 <code>return</code> 后面不能加<strong>回车</strong></li>
+</ul>
+
+<h2 id="标识符">标识符</h2>
+
+<p>标识符是用来识别各种值的合法名称。最常见的标识符就是变量名称，还有函数名称。标识符对于大小写敏感。</p>
+
+<h3 id="命名规则">命名规则</h3>
+
+<ul>
+<li>第一个字符，可以是 <code>unicode</code>字母、<code>$</code> 和下划线 <code>_</code>；</li>
+<li>第二个字符已经后面的字符，除了 <code>unicode</code>字母 、<code>$</code>、<code>_</code>  还可以使用数字 <code>0-9</code>;</li>
+</ul>
+
+<p>合法标识符：</p>
+
+<pre><code>apple
+_that
+$this
+π
+...
+</code></pre>
+
+<p>不合法的标识符：</p>
+
+<pre><code class="language-js">1a // 第一个字符不能是数字
+23 // 第一个字符不能是数字
+*** // 标识符不能有星号
+a+b // 不能包含加号
+-d // 不能包含减号或者连词线
+</code></pre>
+
+<p>中文可以是合法的标识符，可以用做变量名称。</p>
+
+<p><img src="https://jinchao1992.github.io/images/24.png" alt="24" /></p>
+
+<h2 id="注释">注释</h2>
+
+<h3 id="什么叫注释">什么叫注释？</h3>
+
+<blockquote>
+<p>在源代码中被 <code>JavaScript</code> 引擎忽略的部分就叫做注释，它的作用就是对代码进行解释。</p>
+</blockquote>
+
+<p><code>Javascript</code> 提供两种注释写法 : 单行注释，用 <code>//</code> 开头；第二种，多行注释， <code>/**/</code>。</p>
+
+<pre><code class="language-js">// 这是单行注释
+/*
+ 这是
+ 多行
+ 注释
+*/
+</code></pre>
+
+<h3 id="不好的注释">不好的注释</h3>
+
+<ul>
+<li>代码翻译为中文；</li>
+<li>过时的注释，代码变动之后注释并没有更新的注释；</li>
+<li>发泄不满的注释；这个万万不可取；我们要做一个有职业素养的程序员；</li>
+</ul>
+
+<h3 id="好的注释">好的注释</h3>
+
+<ul>
+<li>踩坑注解；</li>
+<li>注释，「代码为何这么写？遇到的 <code>bug</code>等」</li>
+</ul>
+
+<h2 id="区块">区块</h2>
+
+<p>在 <code>Javascript</code> 中使用大括号，将多个相关的语句结合在一起，称为 <code>区块</code> (block)。</p>
+
+<p>如：</p>
+
+<pre><code class="language-js">{
+    let a = 1;
+    let b = 2;
+    let c = 3;
+}
+</code></pre>
+
+<p>区块经常跟着 <code>if/else/for/while</code> 配合使用</p>
+
+<h2 id="条件语句">条件语句</h2>
+
+<p>条件语句包含 <code>if</code> 与 <code>switch</code> 用来完成条件判断，只有满足预设的条件，才会执行相应的语句。</p>
+
+<h3 id="if-结构">if 结构</h3>
+
+<pre><code class="language-js">if(表达式) {
+    语句1;
+} else {
+    语句2;
+}
+// 注意：{} 只有在语句只有一句的情况下可以省略，但是不建议这么做
+</code></pre>
+
+<h3 id="特殊情况">特殊情况</h3>
+
+<ul>
+<li>if 里的赋值操作</li>
+</ul>
+
+<p><img src="https://jinchao1992.github.io/images/25.png" alt="25" /></p>
+
+<p>代码的原意是 当 <code>b</code> 等于 1 时就打印出第一个语句，否则打印第二个语句。但是，这时候写成赋值表达式了，结果就会将 <code>1</code> 赋值给 <code>b</code> 然后再判断 <code>b</code> 的布尔值。</p>
+
+<p>这种情况会生成一个布尔值，因此程序不报错；所以在做判断时，我们需要用全等 <code>===</code> 进行判断，如下图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/26.png" alt="26" /></p>
+
+<ul>
+<li><p>缩进的问题</p>
+
+<pre><code class="language-js">a = 1;
+if (a === 2) 
+  console.log('a')
+  console.log('a等于2')
+// 打印什么？  打印结果是 ”a等于2“，为什么呢？因为 if 后省略的 {} 只能管到一个语句，剩余的语句是正常执行的，不用满足 if 条件。
+</code></pre></li>
+</ul>
+
+<h3 id="最推荐写法">最推荐写法</h3>
+
+<pre><code class="language-js">if (表达式) {
+    语句
+} else if (表达式) {
+    语句
+} else {
+    语句
+}
+
+function fn(a) {
+  if (a === 1) {
+    return 'a 是 1'
+  } 
+  if (a === 2) {
+    return 'a 是 2'
+  }
+  return 'a 是' + a
+}
+fn(3)
+</code></pre>
+
+<p>所有的 <code>{}</code> 都不要省略；如果是在函数中，也可用 <code>return</code> 书写，可以省略 <code>else if</code>；</p>
+
+<h3 id="switch-语句">switch 语句</h3>
+
+<p><code>switch</code> 语句用来代替多个 <code>if...else</code> ，代码结构：</p>
+
+<pre><code class="language-js">switch(fruit) {
+  case 'banana':
+    // ... 执行语句
+    break; 
+  case 'apple':
+    // ... 执行语句
+    break;
+  default
+   // ... 执行语句
+}
+</code></pre>
+
+<blockquote>
+<p>上面代码根据变量<code>fruit</code>的值，选择执行相应的<code>case</code>。如果所有<code>case</code>都不符合，则执行最后的<code>default</code>部分。需要注意的是，每个<code>case</code>代码块内部的<code>break</code>语句不能少，否则会接下去执行下一个<code>case</code>代码块，而不是跳出<code>switch</code>结构。</p>
+</blockquote>
+
+<p><img src="https://jinchao1992.github.io/images/28.png" alt="27" /></p>
+
+<p>如上图所示，如果不写 <code>break</code> 每一个 <code>case</code> 都会执行；</p>
+
+<p><strong>注意：<code>switch</code> 语句后的表达式，与 <code>case</code> 语句后面的表达式比较时，采用的是严格相等的运算法 (===)，意味着比较时不会发生类型转换</strong></p>
+
+<h3 id="三元运算符">三元运算符</h3>
+
+<p>语法：<code>表达式1 ? 表达式2 : 表达式3</code></p>
+
+<pre><code class="language-js">let even = (n % 2 === 0) ? true : false;
+</code></pre>
+
+<p>如果 <code>n</code> 可以被2整除，则 <code>even</code> 等于 <code>true</code> ，否则就等于 <code>false</code>。可以判断一个数是不是偶数。</p>
+
+<p>三元运算符可以视为 <code>if...else...</code> 的简写形式。</p>
+
+<h3 id="短路逻辑">&amp;&amp; 短路逻辑</h3>
+
+<pre><code class="language-js">// 举例
+A &amp;&amp; B &amp;&amp; C &amp;&amp; D 
+// 取第一个假值或者 D，并不会取 true / false
+</code></pre>
+
+<p>如图取值：</p>
+
+<p><img src="https://jinchao1992.github.io/images/29.png" alt="29" /></p>
+
+<h3 id="短路逻辑-1">|| 短路逻辑</h3>
+
+<pre><code class="language-js">// 举例
+A || B || C || D
+// 取第一个真值或D
+</code></pre>
+
+<p>如下图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/30.png" alt="30" /></p>
+
+<h2 id="循环语句">循环语句</h2>
+
+<p>循环语句用于重复执行某个操作，有以下多种形式。</p>
+
+<h3 id="while-循环">while 循环</h3>
+
+<pre><code class="language-js">while(条件) {
+  语句;
+}
+</code></pre>
+
+<p><code>while</code> 循环包含一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。</p>
+
+<pre><code class="language-js">let i = 0;
+while(i &lt;= 100) {
+  console.log('i 当前为：' + i);
+  i++;
+}
+</code></pre>
+
+<p>注意：在使用 <code>while</code>时防止条件一直为真，会造成无限循环直到浏览器崩溃；如：</p>
+
+<pre><code class="language-js">a = 0.1;
+while(a === 1) {
+  console.log(a);
+  a = a + 0.1;
+}
+// 此时的while 就是死循环， 因为存在浮点数不精确的问题
+</code></pre>
+
+<h3 id="for-循环">for  循环</h3>
+
+<p><code>for</code> 循环语法：</p>
+
+<pre><code class="language-javascript">for(初始化表达式; 条件; 递增表达式) {
+  语句;
+}
+</code></pre>
+
+<p><code>for</code> 语句后面的括号里面，有三个表达式：</p>
+
+<ul>
+<li>初始化表达式，用来确定循环变量的初始值，只在循环开始时执行一次。</li>
+<li>条件表达式，每轮循环开始时，都要执行这个条件表达式，只有值为真是，才继续进行循环。</li>
+<li>递增表达式，每轮循环的最后一个操作，通常用来递增循环变量；</li>
+</ul>
+
+<p>如下示例：</p>
+
+<pre><code class="language-js">var length = 3;
+for (var i = 0; i &lt; length; i++) {
+ console.log(i);
+}
+// 0
+// 1
+// 2
+</code></pre>
+
+<p>所有的 <code>for</code> 循环都可以用 <code>while</code> 来改写，上面的代码可以用 <code>while</code> 改写为：</p>
+
+<pre><code class="language-js">var length = 3;
+var i = 0;
+while(i &lt; length) {
+  console.log(i);
+  i++; 
+}
+</code></pre>
+
+<h4 id="一些比较容易迷糊的举例">一些比较容易迷糊的举例</h4>
+
+<pre><code class="language-js">var length = 3;
+for (var i = 0; i &lt; length; i++) {
+}
+console.log(i); // 此时的i是多少？ 答案是：3， 因为 i 被循环赋值了
+</code></pre>
+
+<pre><code class="language-js">var length = 3;
+for (var i = 0; i &lt; length; i++) {
+  setTimeout(() =&gt; {
+    console.log(i);
+  }, 0);
+}
+// for循环会打印什么？ 答案是：打印三次3，因为 setTimeout 是你循环慢的，所以无论循环多少次在 setTimeout 时循环已经执行完毕，并赋值到最后一次；
+
+// 优化
+var length = 3;
+for (var i = 0; i &lt; length; i++) {
+  ((i) =&gt; {
+    setTimeout(() =&gt; {
+      console.log(i);
+    }, 0);
+  })(i)
+}
+
+// 或者ES6写法
+let length = 3;
+for (let i = 0; i &lt; length; i++) {
+  setTimeout(() =&gt; {
+    console.log(i);
+  }, 0);
+}
+</code></pre>
+
+<h3 id="do-while-循环">do&hellip;while 循环</h3>
+
+<p><code>do...while</code> 循环与 <code>while</code> 循环类似，唯一的区别就是先运行一次循环体，然后再判断循环条件。</p>
+
+<pre><code class="language-js">do {
+  语句
+} while(条件);
+</code></pre>
+
+<p>不管条件是否为真， <code>do...while</code> 循环至少会运行一次。注意：<code>while</code> 语句后的分号不能省略。示例：</p>
+
+<pre><code class="language-js">var x = 3;
+var i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while(i &lt; x);
+</code></pre>
+
+<h3 id="break-与-continue">break 与 continue</h3>
+
+<p><code>break</code> 语句与 <code>continue</code> 语句都具有跳转作用，可以让代码不按既有顺序执行。</p>
+
+<p><code>break</code> 语句跳出整个代码块终止执行。</p>
+
+<pre><code class="language-js">var i = 0;
+while(i &lt; 100) {
+  console.log(i);
+  i++;
+  if (i === 10) {
+    break;
+  }
+}
+</code></pre>
+
+<p>上述代码只会执行10次循环，一旦 <code>i</code> 等于 10，就会跳出循环。</p>
+
+<pre><code class="language-js">var i = 0;
+for(; i &lt; 100; i++) {
+  console.log(i);
+  if (i === 10) {
+    break;
+  }
+}
+</code></pre>
+
+<p><code>for</code> 循环也可以使用 <code>break</code>。</p>
+
+<p><code>continue</code> 语句用于立即终止本次循环，返回到循环解构头部，开始下一轮循环。</p>
+
+<pre><code class="language-js">var i = 0;
+while(i &lt; 100) {
+  console.log(i);
+  i++;
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log('i 当前为：' + i);
+}
+</code></pre>
+
+<p>上述代码解析为：</p>
+
+<p><img src="https://jinchao1992.github.io/images/31.png" alt="31" /></p>
+
+<p>可以看出只有在<code>i</code>为奇数时，才会输出<code>i</code>的值。如果<code>i</code>为偶数，则直接进入下一轮循环。</p>
+
+<p><strong>注意：如果存在多重循环，不带参数的<code>break</code>语句和<code>continue</code>语句都只针对最内层循环。</strong>如下代码：</p>
+
+<p><img src="https://jinchao1992.github.io/images/32.png" alt="32" /></p>
+
+<p>如上代码可以看出，只是跳出了最内层的循环，最外层的循环还是照常执行；</p>
+
+<h3 id="标签-label">标签（label）</h3>
+
+<p>语法：</p>
+
+<pre><code class="language-js">foo: {
+    console.log(1);
+    break foo;
+    console.log('本行不会输出');
+}
+console.log(2);
+</code></pre>
+
+<p>上述代码只会输出 <code>1</code>, <code>2</code></p>
+
+<p>标签可以是任意的标识符，跟标识符规则一致；</p>
+
+<p>标签通常与<code>break</code>语句和<code>continue</code>语句配合使用，跳出特定的循环。</p>
+
+<pre><code class="language-js">top:
+  for (var i = 0; i &lt; 3; i++){
+    for (var j = 0; j &lt; 3; j++){
+      if (i === 1 &amp;&amp; j === 1) break top;
+      console.log('i=' + i + ', j=' + j);
+    }
+  }
+// i=0, j=0
+// i=0, j=1
+// i=0, j=2
+// i=1, j=0
+</code></pre>
+
+<p>上面代码为一个双重循环区块，<code>break</code>命令后面加上了<code>top</code>标签（注意，<code>top</code>不用加引号），满足条件时，直接跳出双层循环。如果<code>break</code>语句后面不使用标签，则只能跳出内层循环，进入下一次的外层循环。</p>
+
+<h2 id="参考链接">参考链接</h2>
+
+<ul>
+<li><a href="https://wangdoc.com/javascript/basic/grammar.html">网道 JavaScript 的基本语法</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/js/">JS</a>
+
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/js-%E8%AF%AD%E6%B3%95/">JS 语法</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/javascript-%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%E4%B9%8B%E5%AF%B9%E8%B1%A1/" data-tooltip="JavaScript 三座大山之对象">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/js-%E5%86%85%E5%AD%98%E4%B8%96%E7%95%8C/" data-tooltip="JS 内存世界">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 靳超同学. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/javascript-%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%E4%B9%8B%E5%AF%B9%E8%B1%A1/" data-tooltip="JavaScript 三座大山之对象">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/js-%E5%86%85%E5%AD%98%E4%B8%96%E7%95%8C/" data-tooltip="JS 内存世界">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">靳超同学</h4>
+    
+      <div id="about-card-bio">前端开发</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        前端开发工程师
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        北京
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://jinchao1992.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://jinchao1992.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/jinchao1992.github.io\/2019\/09\/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8\/';
+          
+            this.page.identifier = '\/2019\/09\/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'valine';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.56.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="靳超同学">
+<meta name="keywords" content="CSS 入门笔记">
+<meta name="description" content="CSS，层叠样式表(英语：Cascading Style Sheets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。">
+
+
+<meta property="og:description" content="CSS，层叠样式表(英语：Cascading Style Sheets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 以及常见的布局方式">
+<meta name="twitter:title" content="CSS 以及常见的布局方式">
+<meta property="og:url" content="https://jinchao1992.github.io/2019/08/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/">
+<meta property="twitter:url" content="https://jinchao1992.github.io/2019/08/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/">
+<meta property="og:site_name" content="小鱼儿的小站">
+<meta property="og:description" content="CSS，层叠样式表(英语：Cascading Style Sheets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。">
+<meta name="twitter:description" content="CSS，层叠样式表(英语：Cascading Style Sheets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2019-08-11T14:26:53">
+  
+  
+    <meta property="article:modified_time" content="2019-08-11T14:26:53">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="CSS">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+  <meta property="twitter:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+
+
+    <title>CSS 以及常见的布局方式</title>
+
+    <link rel="icon" href="https://jinchao1992.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://jinchao1992.github.io/2019/08/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://jinchao1992.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://jinchao1992.github.io/">小鱼儿的小站</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://jinchao1992.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://jinchao1992.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">靳超同学</h4>
+        
+          <h5 class="sidebar-profile-bio">前端开发</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/jinchao1992" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      CSS 以及常见的布局方式
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-08-11T14:26:53&#43;08:00">
+        
+  
+  
+  
+  
+    2019年8月11日
+  
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>CSS，层叠样式表(英语：<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。</p>
+
+<h3 id="css发展历史">CSS发展历史</h3>
+
+<ol>
+<li>1994年哈肯.维姆.莱提出了CSS的最初建议。伯特.波斯加入一起设计CSS。</li>
+<li>1997年初，W3C内组织了专门管CSS的工作组，其负责人是克里斯.里雷。</li>
+<li>1998年5月W3C发表了CSS2，CSS2.1修改了CSS2中的一些错误，删除了其中不被支持的内容和增加了一些已有浏览器的扩展内容。</li>
+<li>从2001年开始CSS被分为了多个单独的模块，统称为CSS3。这些模块有：
+
+<ul>
+<li>CSS 选择器 level  3</li>
+<li>CSS 媒体查询 level 3</li>
+<li>CSS Color level 3</li>
+<li>……</li>
+</ul></li>
+</ol>
+
+<p>周边工具</p>
+
+<ul>
+<li>Less CSS 一种简化、功能更多的 CSS 语言 <a href="https://less.bootcss.com/">中文官网</a> <a href="http://lesscss.org/">英文官网</a></li>
+<li>SASS 一种简化、功能更多的 CSS 语言 <a href="http://sass.bootcss.com/">中文官网</a></li>
+<li>Post CSS 一种 CSS 处理程序</li>
+</ul>
+
+<h2 id="css-学习资源">CSS 学习资源</h2>
+
+<ol>
+<li>MDN 查询关键字，遇到不会的 CSS 属性就去查阅MDN</li>
+<li><a href="https://css-tricks.com/">CSS Tricks</a>，可以根据属性搜索很多好看的CSS效果；</li>
+<li><a href="https://www.google.com/search?q=阮一峰+css">Google: 阮一峰老师 css</a></li>
+<li><a href="http://www.zhangxinxu.com/wordpress/category/css/page/25/">张鑫旭大神的 240 多篇 CSS 博客</a></li>
+<li><a href="https://tympanus.net/codrops/category/playground/">Codrops 炫酷 CSS 效果</a></li>
+<li><a href="http://www.ituring.com.cn/book/1695">CSS揭秘</a></li>
+<li><a href="http://cndevdocs.com/">CSS 2.1 中文 spec</a></li>
+<li>Google 搜索 CSS Generator ，可以生成css样式</li>
+</ol>
+
+<h2 id="css-开始写">CSS 开始写</h2>
+
+<p><strong>引入 CSS 的几种方式</strong></p>
+
+<ul>
+<li>行间 <code>&lt;div style=&quot;color:red;&quot;&gt;&lt;/div&gt;</code></li>
+<li>内联 <code>&lt;style&gt;div{color: red}&lt;/style&gt;</code></li>
+<li>外部 <code>&lt;link href=&quot;index.css&quot; rel=&quot;stylesheet&quot;&gt;</code></li>
+<li><code>import引入</code> <code>@import url(./index.css)</code></li>
+</ul>
+
+<p><strong>布局小技巧</strong></p>
+
+<ul>
+<li><p><code>HTML</code> 除 <code>div</code> 与 <code>span</code> 外，都有默认样式，所以在布局之前我们通常会清除一些标签的默认样式，如：</p>
+
+<pre><code class="language-css">body,p,h1,h2,dl,dt {
+margin: 0;
+}
+ul,ol {
+list-style: none;
+padding: 0;
+margin: 0
+}
+/* 通常不建议这么写 *{margin: 0; margin: 0} */
+</code></pre></li>
+
+<li><p>清除浮动，如子级用浮动布局，则<strong>需给父级</strong>添加浮动清除代码，代码通常写法，给父级添加 <code>clearfix</code> 类选择器：</p>
+
+<pre><code class="language-css">.clearfix::after{
+content: '';
+clear: both;
+display: block;
+}
+</code></pre></li>
+
+<li><p><code>chrome</code> 浏览器默认字体大小 16px，默认间距 8px</p></li>
+
+<li><p>一个元素的高度是由其内部 <code>文档流</code> 的高度总和决定的</p></li>
+
+<li><p><code>文档流</code>就是文档内元素的流动方向</p>
+
+<ul>
+<li><p>内联元素从左往右流动，如果流动遇到阻碍则换行继续，从左向右流动</p></li>
+
+<li><p>块级元素，每一个块级元素独占一行，从上往下流动</p></li>
+
+<li><p>CSS 属性值 <code>word-break:break-all</code>， 可以将单词打断点，会把整个词分开断点，如下代码预览：</p></li>
+</ul>
+
+<p><a href="https://jsbin.com/ketaxum/2/edit?html,css,output">https://jsbin.com/ketaxum/2/edit?html,css,output</a></p>
+
+<ul>
+<li>CSS <code>float:left; positon:fixed; position:absolute</code> 都能使元素脱离文档流</li>
+</ul></li>
+
+<li><p>为什么内联元素中间会有一个空格的距离，因为内联元素之间如果有换行符或者空格存在，浏览器会解析为一个空格</p></li>
+
+<li><p>每一个字体都有一个建议行高，默认的 <code>line-heigth</code> 由字体设计师决定</p></li>
+
+<li><p>CSS 中 <code>width</code> 的默认值是 <code>auto</code></p></li>
+
+<li><p><code>box-sizing:content-box</code> 的 <code>width</code> 不包含 <code>padding</code> 与 <code>border</code>，元素默认</p></li>
+
+<li><p><code>box-sizing:border-box</code> 的 <code>width</code> 包含 <code>padding</code> 与 <code>border</code></p></li>
+
+<li><p>在布局时，尽量不要给元素定义宽度和高度，会有很多不确定性，妙用 <code>max-width</code> 与 <code>min-width</code></p></li>
+</ul>
+
+<h2 id="css-经典布局方式">CSS 经典布局方式</h2>
+
+<h3 id="两栏布局">两栏布局</h3>
+
+<ul>
+<li><p>方法一：浮动布局</p>
+
+<pre><code class="language-html">&lt;div class=&quot;aside&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">div {
+height: 500px;
+}
+.aside {
+width: 300px;
+background-color: #f60;
+float: left;
+}
+.main {
+background-color: green;
+margin-left: 300px;
+}
+</code></pre></li>
+</ul>
+
+<p>左侧栏固定宽度向左浮动，右侧主要内容用 <code>margin-left</code> 留出左侧栏的宽度，默认宽度是<code>auto</code>, 自动填满剩下宽度  <a href="https://jsbin.com/ketaxum/4/edit?html,css,output">demo</a></p>
+
+<p>右侧固定宽度，左侧自适应则是同理，只要将固定栏右浮动，使用 <code>margin-right</code> 即可，</p>
+
+<pre><code class="language-css">  div {
+    height: 500px;
+  }
+  .aside {
+    width: 300px;
+    background-color: #f60;
+    float: right;
+  }
+  .main {
+    background-color: green;
+    margin-right: 300px;
+  }
+</code></pre>
+
+<ul>
+<li><p>方法二：浮动布局 + 负外边距</p>
+
+<pre><code class="language-html">&lt;div class=&quot;clearfix&quot;&gt;
+&lt;div class=&quot;aside&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;main&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">.clearfix::after {
+content: '';
+display: block;
+clear: both;
+}
+div {
+height: 500px;
+}
+.aside {
+width: 300px;
+float: left;
+margin-right: -100%;
+background-color: #f60;
+}
+.main {
+width: 100%;
+float: left;
+}
+.main .content {
+background-color: green;
+margin-left: 300px;
+}
+</code></pre></li>
+</ul>
+
+<p>左侧固定栏指定一个右侧的100%的负边距，为整个屏幕的宽度，这就使得main的最左侧与屏幕的最左侧对齐，此时的main的宽度是100%，因此需要其子内容content指定一个左侧的外边距空出左侧栏的位置，即左侧栏的宽度300px；适应一侧宽度为100%的布局 <a href="https://jsbin.com/ketaxum/8/edit?html,css,output">demo</a></p>
+
+<ul>
+<li><p>方法三：绝对定位</p>
+
+<pre><code class="language-html">&lt;div class=&quot;box&quot;&gt;
+&lt;div class=&quot;aside&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;main&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">body {
+margin: 0;
+}
+div {
+height: 500px;
+}
+.aside {
+width: 300px;
+position: absolute;
+left: 0;
+top: 0;
+background-color: #f60;
+}
+.main {
+background-color: green;
+margin-left: 300px;
+}
+</code></pre></li>
+</ul>
+
+<p>采用绝对定位，根据绝对定位脱离文档流的特性，<a href="https://jsbin.com/ketaxum/edit?html,css,output">demo</a></p>
+
+<ul>
+<li><p>方法四： flex 布局</p>
+
+<pre><code class="language-html">&lt;div class=&quot;cainter&quot;&gt;
+&lt;div class=&quot;aside&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">div {
+height: 500px;
+}
+.cainter {
+display: flex;
+}
+.aside {
+flex: 0 0 300px;
+background-color: #f60;
+}
+.main {
+flex: 1 1;
+background-color: green;
+}
+</code></pre></li>
+</ul>
+
+<p>弹性盒模型的方式是最简单的，如果不考虑浏览器兼容性的话，则可以使用此方法 <a href="https://jsbin.com/ketaxum/13/edit?html,css,output">demo</a></p>
+
+<h3 id="三栏布局-左中右">三栏布局(左中右)</h3>
+
+<p><strong>三栏布局的特点：两边定宽，然后中间的 <code>width</code> 是 <code>auto</code>, 可以自适应内容</strong></p>
+
+<ul>
+<li>方法一：用绝对定位的方法</li>
+</ul>
+
+<p>原理则是，左侧和右侧布局用绝对定位分别定位在左侧和右侧，中间的布局则用 <code>margin-left</code>  和 <code>margin-right</code> 空出左右栏位置来，<a href="https://jsbin.com/ketaxum/14/edit?html,css,output">demo</a></p>
+
+<pre><code class="language-html">&lt;div class=&quot;cainter&quot;&gt;
+  &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">div {
+  height: 500px;
+}
+.cainter {
+  position: relative;
+}
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  background: red;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  background: green;
+}
+.center {
+  background: yellow;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+</code></pre>
+
+<p>由于采用了绝对定位，所以在布局上三者的位置可以随意更换；</p>
+
+<ul>
+<li>方法二 使用 <code>float</code> 属性</li>
+</ul>
+
+<blockquote>
+<p>左右两栏使用 <code>float</code> 属性，中间栏使用 <code>margin</code> 属性撑开；<a href="https://jsbin.com/ketaxum/18/edit?html,css,output">demo</a></p>
+</blockquote>
+
+<pre><code class="language-html">  &lt;div class=&quot;cainter clearfix&quot;&gt;
+    &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;center&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  div {
+    height: 500px;
+  }
+  .cainter {
+    position: relative;
+  }
+  .left {
+    width: 100px;
+    background: red;
+    float: left;
+  }
+  .right {
+    width: 100px;
+    background: green;
+    float: right;
+  }
+  .center {
+    background: yellow;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+</code></pre>
+
+<blockquote>
+<p>缺点：1. 当宽度小于左右两边宽度之和时，右侧栏会被挤下去；2. html结构不正确</p>
+</blockquote>
+
+<ul>
+<li><p>方法三，浮动 + 负外边距 (双飞翼布局)</p>
+
+<ul>
+<li>三栏都采用左浮动</li>
+<li>中间栏也是左浮动，默认情况下由于前面中间栏 占据了 100% 的宽度，因此左侧是在另起一行显示，为左侧栏设置 <code>margin-left: -100%;</code> 即整个屏幕的宽度100%，这就令左侧栏布局到中间栏的最左侧</li>
+<li>右侧栏也是左浮动，此时默认的情况下也是在中间栏的下一行，同样利用 <code>margin-left: -300px;</code>  <code>300px</code> 为右侧模块宽度，使其到上一行最右侧位置</li>
+
+<li><p>中间栏内容部分则需要利用分别等于左右栏宽度外边距来空出它们的位置</p>
+
+<pre><code class="language-html">&lt;div class=&quot;cainter clearfix&quot;&gt;
+&lt;div class=&quot;center&quot;&gt;
+&lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">.clearfix::after {
+content: '';
+display: block;
+clear: both;
+}
+div {
+height: 500px;
+}
+.cainter {
+position: relative;
+}
+.center {
+float: left;
+width: 100%;
+background: yellow;
+}
+.left {
+float: left;
+width: 200px;
+margin-left: -100%;
+background: green;
+}
+.right {
+float: left;
+width: 300px;
+background: red;
+margin-left: -300px;
+}
+.main {
+margin-left: 200px;
+margin-right: 300px;
+}
+  
+</code></pre></li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>这种方法的好处就是主体内容可以在前面优先加载；缺点：结构不正确，且多了一层标签 <a href="https://jsbin.com/ketaxum/19/edit?html,css,output">demo</a></p>
+</blockquote>
+
+<ul>
+<li><p>方法四： flex布局</p>
+
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;middle&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+  
+</code></pre>
+
+<pre><code class="language-css">div {
+height: 500px;
+}
+.container {
+width: 100%;
+display: flex;
+}
+  
+.left {
+width: 100px;
+background: green;
+}
+.middle {
+width: 100%;
+background: yellow;
+}
+.right {
+width: 100px;
+background: red;
+}
+  
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>不考虑兼容性的话，最靠谱的一种方式 <a href="https://jsbin.com/lerozex/2/edit?html,css,output">demo</a></p>
+</blockquote>
+
+<h2 id="css-垂直居中-水平居中方式">CSS 垂直居中，水平居中方式</h2>
+
+<h3 id="一-水平居中">一、水平居中</h3>
+
+<h4 id="1-行内元素水平居中">1. 行内元素水平居中</h4>
+
+<p><strong><code>text-align:center;</code></strong> 可以实现块级元素内部的行内元素的的水平居中，此方法只对 <code>display:inline-block display:inlie; display:inline-table 和 display:inline-flex 元素水平居中有效</code>，并且是给父级设置样式：</p>
+
+<pre><code class="language-css">.parent {
+  text-align: center;
+}
+</code></pre>
+
+<blockquote>
+<p>小技巧：如果是一个块级元素，我们可以先改变为 <code>display:inline-block;</code> 就可以使用 <code>text-align:center;</code></p>
+</blockquote>
+
+<h4 id="2-块级元素的水平居中">2. 块级元素的水平居中</h4>
+
+<ul>
+<li><p>将该元素的左右外边距设置为 <code>auto</code> , 此方法必须是块级元素有宽度才可以，否则不起作用；</p>
+
+<pre><code class="language-css">.box {
+width: 100px; // 宽度属性是必须的
+margin: 0 auto;
+}
+</code></pre></li>
+
+<li><p>使用 <code>table + margin</code> 先将子元素设置为块级表格显示，再将其居中，<code>display:table</code> 在表现上类似 <code>block</code> 元素，但是宽度为内容宽;</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;Demo&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .parent {
+      border: 1px solid #ddd;
+      height: 100px;
+  }
+  .child {
+      display: table;
+      margin: 0 auto;
+      background: red;
+  }
+&lt;/style&gt;
+  
+</code></pre></li>
+
+<li><p>使用 <code>absolute + transform</code>  先将父元素设置为相对定位，然后子元素设置为绝对定位，<code>left</code> 值设置为 50% , 然后通过移动子元素的一半宽度即可</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;Demo&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .parent {
+      border: 1px solid #ddd;
+      height: 100px;
+      position: relative;
+  }
+  .child {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+&lt;/style&gt;
+</code></pre></li>
+</ul>
+
+<p><code>transform</code> 属于 <code>css3</code> 内容，存在兼容性问题，高版本浏览器需加上前缀</p>
+
+<ul>
+<li><p>使用 flex + justify-content 给父级加</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;Demo&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+	.parent {
+  display: flex;
+  justify-content: center;
+}
+&lt;/style&gt;
+</code></pre></li>
+
+<li><p>使用flex+margin，通过flex将父容器设置为 <code>flex</code> 布局，再设置子元素居中</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;Demo&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .parent {
+      display: flex;
+  }
+  .child {
+      margin: 0 auto;
+  }
+&lt;/style&gt;
+  
+</code></pre></li>
+</ul>
+
+<h4 id="3-多块级元素水平居中">3. 多块级元素水平居中</h4>
+
+<ul>
+<li><p>利用弹性布局(flex)，实现水平居中，其中 <code>justify-content</code> 用于设置弹性盒模型子元素在主轴(默认横屏)方向上的对齐方式,</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;demo1&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;demo2&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;demo3&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .parent {
+      border: 1px solid #ddd;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+  }
+  .child {
+      background: red;
+      padding: 10px;
+      margin: 10px;
+  }
+&lt;/style&gt;
+  
+</code></pre></li>
+</ul>
+
+<p><a href="https://jsbin.com/luhokeh/3/edit?html,css,output">demo</a></p>
+
+<ul>
+<li><p>利用inline-block ，子级全部设置为 <code>display:inline-block;</code> 父级设置 <code>text-align:center;</code></p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;demo1&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;demo2&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;demo3&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .parent {
+      border: 1px solid #ddd;
+      height: 100px;
+      text-align: center;
+  }
+  .child {
+      background: red;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+  }
+&lt;/style&gt;
+  
+</code></pre></li>
+</ul>
+
+<p><a href="https://jsbin.com/luhokeh/11/edit?html,css,output">demo</a></p>
+
+<h4 id="4-浮动元素水平居中">4. 浮动元素水平居中</h4>
+
+<ul>
+<li>定宽的浮动元素，通过设置子元素 <code>relative + 负margin</code>，原理如图：</li>
+</ul>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/31/16c4609c428bc734?w=656&amp;h=372&amp;f=png&amp;s=14836" alt="gitHub" /></p>
+
+<p><a href="https://jsbin.com/luhokeh/12/edit?html,css,output">demo</a>  <strong>注意：样式设置在浮动元素的本身</strong></p>
+
+<ul>
+<li>不定宽的浮动元素，原理如图：</li>
+</ul>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/7/31/16c4609c42a6b356?w=932&amp;h=245&amp;f=png&amp;s=25160" alt="" /></p>
+
+<p><a href="https://jsbin.com/luhokeh/20/edit?html,css,output">demo</a></p>
+
+<ul>
+<li><p>通用办法 <code>flex</code> 布局</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;span class=&quot;chlid&quot;&gt;水平居中&lt;/span&gt;
+&lt;/div&gt;
+&lt;style&gt;
+	.parent {
+      display:flex;
+      justify-content:center;
+  }
+  .chlid{
+      float: left;
+      width: 200px;// 有无宽度不影响居中
+  }
+&lt;/style&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="5-绝对定位元素水平居中">5. 绝对定位元素水平居中</h4>
+
+<p>通过子元素绝对定位，加上 <code>marging:0 auto</code> 实现；</p>
+
+<p><a href="https://jsbin.com/luhokeh/22/edit?html,css,output">demo</a></p>
+
+<h3 id="垂直居中">垂直居中</h3>
+
+<h4 id="1-单行内联元素重置居中">1. 单行内联元素重置居中</h4>
+
+<pre><code class="language-html">&lt;div class=&quot;box&quot;&gt;
+  &lt;span&gt;单行文本元素垂直居中&lt;/span&gt;
+&lt;/div&gt;
+&lt;style&gt;
+    .box {
+        height: 100px;
+        line-height: 100px;
+        border: 1px solid #ddd;
+    }
+&lt;/style&gt;
+</code></pre>
+
+<h4 id="2-多行内联元素垂直居中">2. 多行内联元素垂直居中</h4>
+
+<ul>
+<li><p>利用 flex 布局，实现垂直居中，其中 <code>flex-direction: column;</code> 定义主轴方向为纵向</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+&lt;p&gt;多行文本实现居中，多行文本实现居中，多行文本实现居中，多行文本实现居中，    
+  多行文本实现居中，多行文本实现居中，多行文本实现居中，多行文本实现居中，    
+  多行文本实现居中，多行文本实现居中，多行文本实现居中，多行文本实现居中&lt;/p&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.parent { 
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #ddd;
+}
+&lt;/style&gt;
+  
+</code></pre></li>
+</ul>
+
+<p><a href="https://jsbin.com/kojipaq/1/edit?html,css,output">demo</a></p>
+
+<ul>
+<li><p>利用表格布局， <code>vertical-align: middle</code> 可以实现子元素的垂直居中</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt; 
+	&lt;p&gt;多行文本实现居中，多行文本实现居中，多行文本实现居中，多行文本实现居中，    
+  多行文本实现居中，多行文本实现居中，多行文本实现居中，多行文本实现居中，    
+  多行文本实现居中，多行文本实现居中，多行文本实现居中，多行文本实现居中&lt;/p&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.parent { 
+  height: 140px;
+  border: 2px solid #ddd;
+  display: table;
+}
+.child {
+  display: table-cell;
+  vertical-align: middle;
+}
+&lt;/style&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="3-块级元素垂直居中">3. 块级元素垂直居中</h4>
+
+<ul>
+<li><p>使用 <code>absolute + 负 maring</code>  前提是已知模块的宽度和高度, 与绝对定位的水平居中遥相呼应，是平时用的多的布局方式；</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+  &lt;div class=&quot;child&quot;&gt;固定高度的块级元素垂直居中。&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+	.parent {
+      position: relative;
+  }
+  .child {
+      position: absolute;
+      top: 50%;
+      height: 100px;
+      margin-top: -50px;
+  }
+&lt;/style&gt;
+</code></pre></li>
+
+<li><p>使用 <code>absolute + transform</code> 此方法适用于高度和宽度未知时</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+  &lt;div class=&quot;child&quot;&gt;固定高度的块级元素垂直居中。&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+	.parent {
+      position: relative;
+  }
+  .child {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+&lt;/style&gt;
+  
+</code></pre></li>
+
+<li><p>使用 <code>flex + alig-items</code> 与做水平居中的 <code>flex + justify-content:center;</code> 对应，是目前布局经常用的，有兼容性问题；</p>
+
+<pre><code class="language-html">&lt;div class=&quot;parent&quot;&gt;
+ &lt;div class=&quot;child&quot;&gt;未知高度的块级元素垂直居中。&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.parent {
+ display:flex;
+ align-items:center;
+}
+&lt;/style&gt;
+  
+</code></pre></li>
+</ul>
+
+<h3 id="三-水平垂直居中">三、水平垂直居中</h3>
+
+<p>常用的适合没有兼容问题或者没有定宽高的布局</p>
+
+<h4 id="方法1-绝对定位与负边距实现-已知宽高">方法1：绝对定位与负边距实现 (已知宽高)</h4>
+
+<pre><code class="language-html">&lt;div id='container'&gt;
+  &lt;div id='center' style=&quot;width: 100px;height: 100px;background-color: #666&quot;&gt;center&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  #container {
+    position: relative;
+  }
+  #center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+  }
+&lt;/style&gt;
+
+</code></pre>
+
+<h4 id="方法2-绝对定位与-margin-auto-已知宽高">方法2： 绝对定位与 margin:auto (已知宽高)</h4>
+
+<pre><code class="language-html">&lt;div id='container'&gt;
+  &lt;div id='center' style=&quot;width: 100px;height: 100px;background-color: #666&quot;&gt;center&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  #container {
+    position: relative;
+  }
+  #center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; // 此处是重要写法
+  }
+&lt;/style&gt;
+</code></pre>
+
+<h4 id="方法3-绝对定位-css3-未知宽高-不考虑兼容性的话-此方法非常舒服">方法3： 绝对定位 + CSS3 (未知宽高) 不考虑兼容性的话 此方法非常舒服</h4>
+
+<pre><code class="language-html">&lt;div id='container'&gt;
+  &lt;div id='center' style=&quot;background-color: #666&quot;&gt;center&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  #container {
+    position: relative;
+  }
+  #center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+&lt;/style&gt;
+</code></pre>
+
+<h4 id="方法4-flex-布局-移动端常用-pc不考虑兼容可用">方法4： flex 布局 移动端常用，pc不考虑兼容可用</h4>
+
+<pre><code class="language-html">&lt;div id='container'&gt;
+  &lt;div id='center' style=&quot;width: 100px;height: 100px;background-color: #666&quot;&gt;center&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  #container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+&lt;/style&gt;
+</code></pre>
+
+<h2 id="后记">后记</h2>
+
+<p>这篇总结也是站在一些前辈(大神)的基础上总结的一些技巧、方法，他们的文章教会了我很多，学到了很多！希望以后可以达到他们所在的成就，加油吧！持续不断的学习（折腾！！！）<br />
+CSS 的学习是由易到难，越往后学，越觉得CSS的难点所在，所以不管是在平时的工作中还是在自己折腾的项目中都是需要重视CSS的书写，多多的尝试一些新的CSS属性以及更多的CSS布局，多多的总结吧！</p>
+
+<h2 id="参考文章">参考文章</h2>
+
+<p><a href="https://github.com/ljianshu/Blog/issues/29">如何居中一个元素(终结版)</a></p>
+
+<p><a href="https://blog.csdn.net/crystal6918/article/details/55224670">CSS 两栏布局，三栏布局</a></p>
+
+<p><a href="https://segmentfault.com/a/1190000011358507#articleHeader6">CSS 布局说</a></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/css/">CSS</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/" data-tooltip="CSS Margin 布局技巧">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/html-%E6%98%AF%E4%BB%80%E4%B9%88/" data-tooltip="HTML 是什么">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 靳超同学. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/" data-tooltip="CSS Margin 布局技巧">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/html-%E6%98%AF%E4%BB%80%E4%B9%88/" data-tooltip="HTML 是什么">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">靳超同学</h4>
+    
+      <div id="about-card-bio">前端开发</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        前端开发工程师
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        北京
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://jinchao1992.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://jinchao1992.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/jinchao1992.github.io\/2019\/08\/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F\/';
+          
+            this.page.identifier = '\/2019\/08\/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'valine';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

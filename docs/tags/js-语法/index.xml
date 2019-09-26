@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS 语法 on 小鱼儿的小站</title>
+    <link>https://jinchao1992.github.io/tags/js-%E8%AF%AD%E6%B3%95/</link>
+    <description>Recent content in JS 语法 on 小鱼儿的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 13 Sep 2019 10:09:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://jinchao1992.github.io/tags/js-%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JS 语法入门</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Fri, 13 Sep 2019 10:09:02 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;任何语言都有语法，那么先从语法入门来看看 &lt;code&gt;JS&lt;/code&gt; 的世界吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

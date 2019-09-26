@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.56.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="靳超同学">
+<meta name="keywords" content="CSS">
+<meta name="description" content="如果我们把 HTML 理解为一栋房子的主体结构（毛坯房），那么 CSS 就是我们用来装修房子的材料，我们可以用 CSS 装修出各种华丽、大体、美观的房子（网页）。所以 CSS 对于前端开发者来说也是必不可缺的一项软技能了，学好 CSS 就显得尤为重要了。废话不多说一起来看看 CSS 的一些重要知识点吧。">
+
+
+<meta property="og:description" content="如果我们把 HTML 理解为一栋房子的主体结构（毛坯房），那么 CSS 就是我们用来装修房子的材料，我们可以用 CSS 装修出各种华丽、大体、美观的房子（网页）。所以 CSS 对于前端开发者来说也是必不可缺的一项软技能了，学好 CSS 就显得尤为重要了。废话不多说一起来看看 CSS 的一些重要知识点吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 全解">
+<meta name="twitter:title" content="CSS 全解">
+<meta property="og:url" content="https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/">
+<meta property="twitter:url" content="https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/">
+<meta property="og:site_name" content="小鱼儿的小站">
+<meta property="og:description" content="如果我们把 HTML 理解为一栋房子的主体结构（毛坯房），那么 CSS 就是我们用来装修房子的材料，我们可以用 CSS 装修出各种华丽、大体、美观的房子（网页）。所以 CSS 对于前端开发者来说也是必不可缺的一项软技能了，学好 CSS 就显得尤为重要了。废话不多说一起来看看 CSS 的一些重要知识点吧。">
+<meta name="twitter:description" content="如果我们把 HTML 理解为一栋房子的主体结构（毛坯房），那么 CSS 就是我们用来装修房子的材料，我们可以用 CSS 装修出各种华丽、大体、美观的房子（网页）。所以 CSS 对于前端开发者来说也是必不可缺的一项软技能了，学好 CSS 就显得尤为重要了。废话不多说一起来看看 CSS 的一些重要知识点吧。">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2019-08-27T23:40:47">
+  
+  
+    <meta property="article:modified_time" content="2019-08-27T23:40:47">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="CSS">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+  <meta property="twitter:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+
+
+    <title>CSS 全解</title>
+
+    <link rel="icon" href="https://jinchao1992.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://jinchao1992.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://jinchao1992.github.io/">小鱼儿的小站</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://jinchao1992.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://jinchao1992.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">靳超同学</h4>
+        
+          <h5 class="sidebar-profile-bio">前端开发</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/jinchao1992" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      CSS 全解
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-08-27T23:40:47&#43;08:00">
+        
+  
+  
+  
+  
+    2019年8月27日
+  
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>如果我们把 <code>HTML</code> 理解为一栋房子的主体结构（毛坯房），那么 <code>CSS</code> 就是我们用来装修房子的材料，我们可以用 <code>CSS</code> 装修出各种华丽、大体、美观的房子（网页）。所以 <code>CSS</code> 对于前端开发者来说也是必不可缺的一项软技能了，学好 <code>CSS</code> 就显得尤为重要了。废话不多说一起来看看 <code>CSS</code> 的一些重要知识点吧。</p>
+
+<h3 id="css-盒模型">CSS 盒模型</h3>
+
+<p><code>CSS</code> 盒模型是 <code>CSS</code> 的基础，也是我们在工作中会经常遗忘的点，基本上面试时都会被提及，那么什么是 <code>CSS</code> 盒模型呢？一起来看。</p>
+
+<p>我们知道网页是由 <code>html</code> 标签组成的，我们可以认为每个 <code>html</code> 标签都是一个小方块，小方块里面又套着小方块，就像是盒子一层层包裹一样，这就是所谓的盒模型了。也可以理解一个小模块就具备一个小盒模型。</p>
+
+<h4 id="盒模型的组成">盒模型的组成</h4>
+
+<p>盒模型是由外边距(margin)、边框（border）、内边距（padding）、内容（content）组成的，如下图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/item1.png" alt="item1" /></p>
+
+<p>上图就是一个基本的 <code>CSS</code> 盒模型的构成。</p>
+
+<p>盒模型又可分为  <strong>内容盒模型(content-box)</strong> 和 <strong>边框盒模型(border-box)</strong> 。其中内容盒模型是浏览器默认的解析的盒模型。它们有什么区别呢？</p>
+
+<ol>
+<li><p>content-box 宽度组成 , 如下代码：</p>
+
+<pre><code class="language-css">.content-box {
+width: 100px;
+height: 100px;
+padding: 20px;
+border: 5px solid #f00;
+margin: 20px;
+box-sizing: content-box;
+}
+/*浏览器解析出来的宽度为 width + padding + border */
+</code></pre></li>
+</ol>
+
+<p>图解上述代码：</p>
+
+<p><img src="https://jinchao1992.github.io/images/item2.png" alt="item2" /></p>
+
+<ol>
+<li><p>border-box 宽度组成，如下代码：</p>
+
+<pre><code class="language-css">.content-box {
+width: 100px;
+height: 100px;
+padding: 20px;
+border: 5px solid #f00;
+margin: 20px;
+box-sizing: border-box;
+}
+/*浏览器解析出来的宽度为，宽度写了多少就是多少，padding 与 border 会解析在写的width里 */
+</code></pre></li>
+</ol>
+
+<p>图解上述代码</p>
+
+<p><img src="https://jinchao1992.github.io/images/item3.png" alt="item3" /></p>
+
+<p>高度跟宽度原理同理，只需要把左右换为上下即可。两个盒子模型的切换可以通过 <code>css</code> 属性 <code>box-sizing</code> 来修改。</p>
+
+<p><strong>注意：盒子模型的宽度是由 <code>padding</code> 、<code>border</code>、<code>content(内容)</code> 构成的，其并不包含 <code>margin</code>大小。但是 <code>css</code> 盒模型是由 <code>content(内容)</code>、<code>padding(内边距)</code>、<code>border（边框）</code>、<code>margin(外边距)</code>组成的 ；</strong></p>
+
+<p>在现代布局中，通常是会把 <code>box-sizing</code> 设置为 <code>border-box</code> 方便我们进行宽度计算这样不会造成宽度错乱问题。</p>
+
+<h3 id="css-margin合并问题">CSS margin合并问题</h3>
+
+<p>关于 <code>margin</code> 合并问题可以参照我写的这篇文章 <a href="https://jinchao1992.github.io/post/css-margin-布局技巧">css-margin布局技巧</a> 这里就不列举了！</p>
+
+<h3 id="页面文档流">页面文档流</h3>
+
+<p>文档流（英文名：Normal Flow）简单来说就是文档流动方向。内联元素从左向右流动，走到行尾进行折行继续走，块级元素从上到下排列，一行只有一个块级元素。如下图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/item4.png" alt="item4" /></p>
+
+<p>可以看到内联元素遇到行尾之后会自动折行，块级元素不管设置宽度多少是一定会独占一行的。</p>
+
+<h4 id="模块元素">模块元素</h4>
+
+<ul>
+<li><p><code>inline</code> 内联元素，从左向右流动，会自动折行，如果一行放不下的话会把行尾的内联元素切分，如上图所示。</p></li>
+
+<li><p><code>block</code> 块元素，从上到下流动，不管宽度多大只要是块就会一直独占一行。</p></li>
+
+<li><p><code>inline-block</code> 内联块元素，从左到右流动，但是又具备块级元素的特性。如果在一行的行尾放不下时，元素会整体下移。如下图：</p></li>
+</ul>
+
+<p><img src="https://jinchao1992.github.io/images/item5.png" alt="item5" /></p>
+
+<p>如上图所示，我们把 <code>span</code> 变为了内联块，在行尾时第6个 <code>span</code> 是换行显示的。</p>
+
+<p><strong>注意：HTML模块并不是只有这三种，只是我们可以通过修改css样式变为这三种模块； 内联元素里不能加入块级元素</strong></p>
+
+<h4 id="宽度">宽度</h4>
+
+<ul>
+<li>内联元素的宽度是由元素本身里内联元素的宽决定的，不能用 <code>width</code> 设置；</li>
+<li>块级元素的默认宽度是 <code>auto</code>；表示能有多宽占多宽，块级元素宽度最好别写 <code>100%</code>；</li>
+<li>内联块元素的宽度跟内联元素一样，但是可以使用 <code>width</code> 进行设置；</li>
+</ul>
+
+<h4 id="高度">高度</h4>
+
+<ul>
+<li>内联元素的高度是由 <code>line-height</code> 行高间接确定，跟 <code>height</code> 无关，跟字体有关系；</li>
+<li>块级元素的高度是由里面所有<strong>文档流元素</strong>的高度总和决定的；一定注意是文档流元素，因为一个一旦脱离文档流就会造成高度塌陷。也可以通过 <code>height</code> 设置高度。</li>
+<li>内联块跟块级元素一样，可以设置高度；</li>
+</ul>
+
+<h4 id="文档溢出-overflow">文档溢出（overflow）</h4>
+
+<ul>
+<li>overflow: visible; 默认写法 超出文档内容默认显示</li>
+<li>overflow: hidden; 超出文档内容隐藏</li>
+<li>overflow: scroll; 超出部分用滚动条显示，但是如果不超出也会显示滚动条</li>
+<li>overflow: auto; 超出部分自动选择滚动条</li>
+</ul>
+
+<p>注意：如果有滚动条，内联元素默认在第一屏显示（特指overflow-x 方向）<code>overflow</code> 可以分为 <code>overflow-x</code> 与 <code>overflow-y</code>。</p>
+
+<h3 id="脱离文档流">脱离文档流</h3>
+
+<ul>
+<li><p>浮动元素可以脱离文档里；</p>
+
+<pre><code class="language-css">.box {
+float: left; /* 或者float:right */
+}
+</code></pre></li>
+
+<li><p>绝对定位元素与固定定位元素可以脱离文档流；</p>
+
+<pre><code class="language-css">.box {
+position: absolute; /*或者position: fixed;*/
+}
+</code></pre></li>
+</ul>
+
+<p>脱离文档流后会造成高度塌陷，为什么呢？因为块级元素的高度是由里文档流元素决定的。</p>
+
+<h3 id="布局分类">布局分类</h3>
+
+<p>布局是什么？布局的定义是，把页面分为一个个模块，并按照一定的格式组合排列，这就是布局。</p>
+
+<p>布局大致可以分为三类：</p>
+
+<ul>
+<li>固定宽度布局，一般宽度为 960/1000/1024/1200px等；</li>
+<li>不固定宽度布局，依靠文档流来实现；</li>
+<li>响应式布局，具体就是两套页面PC上固定宽度，手机上不固定宽度，称之为混合布局。</li>
+</ul>
+
+<h3 id="css-布局套路">CSS 布局套路</h3>
+
+<p>用下图可以简单表示：</p>
+
+<p><img src="https://jinchao1992.github.io/images/item6.png" alt="image6" /></p>
+
+<p>如果我们只做手机移动页面或者只兼容高级浏览器的话，可以直接使用 <code>flex</code> 布局。</p>
+
+<h4 id="float-布局">float 布局</h4>
+
+<p>在现代浏览器中，<code>float</code>  布局显得不是那么重要了，因为可以通过 <code>flex</code> 或者 <code>grid</code> 写很少的代码就可以达到很复杂的布局，但是呢？因为存在浏览器兼容的问题，如必须兼容到 <code>IE8</code> 等，还是得用 <code>float</code> 布局。</p>
+
+<h5 id="float-布局步骤">float 布局步骤</h5>
+
+<ul>
+<li>在子元素上加上 <code>float:left;</code> 或 <code>float:right;</code> 并添加 <code>width</code>；</li>
+
+<li><p>重点： 在父元素上添加 <code>.clearfix</code> 类 用来清除浮动，因为不清除浮动会造成很大 <code>bug</code>;</p>
+
+<pre><code class="language-html">&lt;style&gt;
+.clearfix:after {
+content: '';
+display: block;
+clear: both;
+}
+.parent {
+border: 1px solid red;
+}
+.child {
+float: left;
+}
+.child:nth-child(1) {
+width: 100px;
+border: 3px solid blue;
+}
+.child:nth-child(2) {
+border: 3px solid green;
+float: right;
+} 
+&lt;/style&gt;
+&lt;div class=&quot;parent clearfix&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;left&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;rigth&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li>
+</ul>
+
+<p>注意：通常最后一个 <code>float</code> 元素不添加宽度，让其自动响应；<code>display: inline-block;</code>元素需加上 <code>vertical-align:top</code>;</p>
+
+<h5 id="float-布局示例">float 布局示例</h5>
+
+<ul>
+<li>两栏布局  <a href="https://jsbin.com/xuruceh/3/edit?html,css,output">demo</a></li>
+<li>三栏布局 <a href="https://jsbin.com/xuruceh/19/edit?html,css,output">demo</a></li>
+<li>平均布局 <a href="https://jsbin.com/xuruceh/24/edit?html,css,output">demo</a></li>
+</ul>
+
+<h4 id="flex-布局">flex 布局</h4>
+
+<p>移动互联网时代浮动布局是用的越来越少，紧接着出现的是 <code>flex</code> 布局与 <code>grid</code> 布局，由于 <code>grid</code> 布局本身的兼容性不是太好，所有目前用的最多的还是 <code>flex</code> 布局。一起来看 <code>flex</code> 布局是什么吧！</p>
+
+<p><code>flex</code>  作用在两个模块身上，分别是 <code>container</code>(容器)  与 <code>items</code>(子元素) 如下图：</p>
+
+<p><img src="https://i.loli.net/2019/08/30/Y6NQaD9Ij8Bsv7q.png" alt="1.png" /></p>
+
+<h5 id="flex-container-样式">flex container 样式</h5>
+
+<ul>
+<li><code>display:flex</code> 元素变为弹性盒；</li>
+<li><code>flex-direction: row | row-reverse | column | column-reverse</code> 改变子元素流动方向（控制的方向叫主轴）
+
+<ul>
+<li><code>row</code> 默认样式，子元素横向排列  <a href="https://jsbin.com/xisopis/1/edit?html,css,output">demo</a></li>
+<li><code>row-reverse</code> 子元素从右往左排 <a href="https://jsbin.com/xisopis/4/edit?html,css,output">demo</a></li>
+<li><code>column</code> 子元素竖着排列 <a href="https://jsbin.com/xisopis/5/edit?html,css,output">demo</a></li>
+<li><code>column-reverse</code> 子元素从下往上排列 <a href="https://jsbin.com/xisopis/19/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>flex-wrap: nowrap | wrap | wrap-reverse</code> 控制子元素流动是否折行
+
+<ul>
+<li><code>nowrap</code> 默认样式，不折行，如果子元素过多则会一直去平分父元素宽度 <a href="https://jsbin.com/xisopis/18/edit?html,css,output">demo</a></li>
+<li><code>wrap</code> 换行 <a href="https://jsbin.com/xisopis/17/edit?html,css,output">demo</a></li>
+<li><code>wrap-reverse</code> 从下往上折行 <a href="https://jsbin.com/xisopis/15/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>justify-content: flex-start | flex-end | center | sapce-between | space-around | space-evenly</code> 设置主轴对齐方式
+
+<ul>
+<li><code>flex-start</code> 默认样式，开始位置对齐</li>
+<li><code>flex-end</code> 结束位置对齐 <a href="https://jsbin.com/xisopis/21/edit?html,css,output">demo</a></li>
+<li><code>center</code> 居中对齐（非常有用）<a href="https://jsbin.com/xisopis/22/edit?html,css,output">demo</a></li>
+<li><code>space-between</code> 富裕空间放入两个元素之间 <a href="https://jsbin.com/xisopis/23/edit?html,css,output">demo</a></li>
+<li><code>space-arount</code> 富裕空间平均放入在每个元素之间 <a href="https://jsbin.com/xisopis/26/edit?html,css,output">demo</a></li>
+<li><code>space-evenly</code> 在一个元素与最后一个元素的留白是一样的，其余元素平分 <a href="https://jsbin.com/xisopis/28/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>align-items: flex-start | flex-end | center | stretch</code> 规定侧轴的对齐方式
+
+<ul>
+<li><code>flex-start</code> 默认样式，开始位置对齐</li>
+<li><code>flex-end</code> 结束位置对齐 <a href="https://jsbin.com/xisopis/30/edit?html,css,output">demo</a></li>
+<li><code>center</code> 侧轴居中对齐 <a href="https://jsbin.com/xisopis/31/edit?html,css,output">demo</a></li>
+<li><code>stretch</code> 默认，侧轴两边对齐，如果子元素内容不一致时则会默认对齐最长的元素 <a href="https://jsbin.com/xisopis/34/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>align-content: flex-start | flex-end | center | space-between | space-around | stretch</code>  多行内容对齐方式
+
+<ul>
+<li><code>flex-start</code> 整体靠上 <a href="https://jsbin.com/xisopis/36/edit?html,css,output">demo</a></li>
+<li><code>flex-end</code> 整体靠下  <a href="https://jsbin.com/xisopis/38/edit?html,css,output">demo</a></li>
+<li><code>center</code> 整体居中 <a href="https://jsbin.com/xisopis/40/edit?html,css,output">demo</a></li>
+<li><code>space-between</code>  富裕空间在每一行中间 <a href="https://jsbin.com/xisopis/42/edit?html,css,output">demo</a></li>
+<li><code>space-around</code> 富裕空间在每一行的两侧，平均分配 <a href="https://jsbin.com/xisopis/43/edit?html,css,output">demo</a></li>
+</ul></li>
+</ul>
+
+<h5 id="flex-item-样式">flex item 样式</h5>
+
+<ul>
+<li><code>order</code> 排序，子元素的 <code>order</code>默认是 0 设置值之后为从小到大排列，设置的越大就会排列到最后面，可以为负值，如果值相同的话按照 DOM 书写前后顺序排列 <a href="https://jsbin.com/xisopis/48/edit?html,css,output">demo</a></li>
+<li><code>flex-grow</code> 用来分配多余的空间给某个元素默认是 0  <a href="https://jsbin.com/xisopis/50/edit?html,css,output">demo</a></li>
+<li><code>flex-shrink</code> 用来处理空间不够时规定哪个元素缩小尺寸，默认是 1 ，注意：子元素必须是在同一行时才会起作用  <a href="https://jsbin.com/xisopis/52/edit?html,css,output">demo</a></li>
+<li><code>align-slef: flex-start | flex-end...</code> 规定单个元素的对齐位置，如果在父级元素身上设置了侧轴对齐方式，<code>align-self</code> 可以单独的规定某一个元素的侧轴对齐</li>
+</ul>
+
+<h4 id="grid-布局">grid 布局</h4>
+
+<p><code>grid</code> 布局是未来布局趋势，因为它本身的兼容问题，所以这里只是入门一下。</p>
+
+<p><code>grid</code> 布局也分 <code>container</code> 和 <code>items</code> 。</p>
+
+<h5 id="grid-container-样式">grid container 样式</h5>
+
+<ul>
+<li><code>grid-template-columns</code> 规定列数和列数的宽度；</li>
+<li><code>grid-template-rows</code> 规定行数和行数的宽度；</li>
+</ul>
+
+<p>如下图示例：</p>
+
+<p><img src="https://jinchao1992.github.io/images/item7.png" alt="item7" /></p>
+
+<p><strong>重点：如上图所示，可以通过 <code>grid</code> 布局把空间分为三行五列，横向的线条数是4条，纵向的线条数是6条，这两个线条数必须记住，对于下面的代码介绍有用。我们还可以给每一根线条数起名字，名称随意；</strong></p>
+
+<p>线条取名示例代码：</p>
+
+<pre><code class="language-css">.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto
+  [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line]
+  auto [last-line];
+}
+</code></pre>
+
+<p>示例图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/item8.png" alt="item8" /></p>
+
+<ul>
+<li><p>还可以给子元素设置为份数，代码示例：</p>
+
+<pre><code class="language-css">.container {
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+/*代表两行三列, 其中第二个独占两份*/
+</code></pre>
+
+<ul>
+<li><p>示例1 <a href="https://jsbin.com/qewusoninu/10/edit?html,css,output">demo</a></p></li>
+
+<li><p>示例2 (平均布局) <a href="https://jsbin.com/bonowavuxu/1/edit?html,css,output">demo</a></p></li>
+</ul></li>
+
+<li><p>设置 <code>items</code> 模块之间的距离可以使用 <code>grid-gap:10px;</code>  代表列与列之间，行一行之间都是 <code>10px</code> ，也可以单独设置列：<code>grid-column-gap: 10px;</code> 或者单独行 <code>grid-row-gap: 10px;</code></p></li>
+</ul>
+
+<h5 id="grid-items-样式">grid items 样式</h5>
+
+<ul>
+<li><code>grid-column-start</code> 设置横向开始位置；</li>
+<li><code>grid-column-end</code> 设置横向结束位置；</li>
+<li><code>grid-row-start</code> 设置纵向开始位置；</li>
+<li><code>grid-row-end</code> 设置纵向结束位置；</li>
+</ul>
+
+<p>代码示例： <a href="https://jsbin.com/qewusoninu/6/edit?html,css,output">demo</a></p>
+
+<pre><code class="language-html">&lt;style&gt;
+	* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50px 100px auto 40px 50px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px solid red;
+  }
+  .container &gt; div {
+    border: 1px solid blue;
+  }
+  .a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*表示a横向是从第一条线开始到第三条结束*/
+    grid-row-start: 1;
+    grid-row-end: 4;
+    /*表示a纵向是从第一条线开始到第四条结束*/
+  }
+&lt;/style&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;a&quot;&gt;a&lt;/div&gt;
+  &lt;div class=&quot;b&quot;&gt;b&lt;/div&gt;
+  &lt;div class=&quot;c&quot;&gt;c&lt;/div&gt;
+  &lt;div class=&quot;d&quot;&gt;d&lt;/div&gt;
+  &lt;div class=&quot;e&quot;&gt;e&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>经典布局示例1：<a href="https://jsbin.com/qewusoninu/8/edit?html,css,output">demo</a>； 经典布局示例2： <a href="https://jsbin.com/fafotutoga/1/edit?html,css,output">demo</a></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/css/">CSS</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/" data-tooltip="URL 浅析">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" data-tooltip="HTML 常用标签">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 靳超同学. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/" data-tooltip="URL 浅析">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" data-tooltip="HTML 常用标签">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">靳超同学</h4>
+    
+      <div id="about-card-bio">前端开发</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        前端开发工程师
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        北京
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://jinchao1992.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://jinchao1992.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/jinchao1992.github.io\/2019\/08\/css-%E5%85%A8%E8%A7%A3\/';
+          
+            this.page.identifier = '\/2019\/08\/css-%E5%85%A8%E8%A7%A3\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'valine';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

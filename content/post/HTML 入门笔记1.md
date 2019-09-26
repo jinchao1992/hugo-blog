@@ -2,8 +2,15 @@
 title: "HTML 入门笔记1"
 date: 2019-08-18T16:41:46+08:00
 draft: false
+tags:
+- HTML
+keywords:
+- HTML 入门笔记
 ---
+
 HTML（英语：HyperText Markup Language）超文本编辑语言。由**万维网联盟（W3C）**负责维护，于1990年诞生，作者是：Time Berners-Lee（蒂姆·伯纳斯-李）, 也可称为”李爵士“。是整个网页的基础，是学好前端必备的一大知识模块，学好 `HTML` 非常重要，并且我们要学会使用***语义化**的标签来书写 `HTML` 标签。
+
+<!--more-->
 
 ## HTML 简介
 

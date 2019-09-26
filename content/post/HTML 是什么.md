@@ -2,10 +2,17 @@
 title: "HTML 是什么"
 date: 2019-08-11T14:25:39+08:00
 draft: false
+tags:
+- HTML
+keywords:
+- HTML入门
 ---
+
 HTML (英语：HyperText Markup Language)  超文本编辑语言，是整个网站的基石，所以学好 `HTML` 非常重要，并且我们要学会使用 **语义化**的标签来书写 `HTML` 标签，接下来我们来一一介绍 `HTML` 标签。
 
-首先来了解下 `W3C` 和 `MDN`
+首先来了解下 `W3C` 和 `MDN`是什么？
+
+<!--more-->
 
 ### W3C 简介
 
@@ -367,9 +374,9 @@ HTML 常用的标签就是以上几种了，是不是很多，当然我们在平
 
 ------
 
-[HTML元素参考](<https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element>)
+[HTML元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
 
-[可替换元素](<https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element>)
+[可替换元素](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element)
 
-[HTML空标签](
+[HTML空标签](https://developer.mozilla.org/zh-CN/docs/Glossary/%E7%A9%BA%E5%85%83%E7%B4%A0)
 

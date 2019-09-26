@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.56.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="靳超同学">
+<meta name="keywords" content="URL 入门知识">
+<meta name="description" content="URL（Uniform Resource Locator）统一资源定位符。由 蒂姆·伯纳斯-李 发明。它包含以下几个方面：">
+
+
+<meta property="og:description" content="URL（Uniform Resource Locator）统一资源定位符。由 蒂姆·伯纳斯-李 发明。它包含以下几个方面：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="URL 浅析">
+<meta name="twitter:title" content="URL 浅析">
+<meta property="og:url" content="https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/">
+<meta property="twitter:url" content="https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/">
+<meta property="og:site_name" content="小鱼儿的小站">
+<meta property="og:description" content="URL（Uniform Resource Locator）统一资源定位符。由 蒂姆·伯纳斯-李 发明。它包含以下几个方面：">
+<meta name="twitter:description" content="URL（Uniform Resource Locator）统一资源定位符。由 蒂姆·伯纳斯-李 发明。它包含以下几个方面：">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2019-09-05T21:29:11">
+  
+  
+    <meta property="article:modified_time" content="2019-09-05T21:29:11">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="URL">
+    
+      <meta property="article:tag" content="HTTP">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+  <meta property="twitter:image" content="https://jinchao1992.github.io/images/avatar.jpg">
+
+
+    <title>URL 浅析</title>
+
+    <link rel="icon" href="https://jinchao1992.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://jinchao1992.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://jinchao1992.github.io/">小鱼儿的小站</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://jinchao1992.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://jinchao1992.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">靳超同学</h4>
+        
+          <h5 class="sidebar-profile-bio">前端开发</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://jinchao1992.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/jinchao1992" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      URL 浅析
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-09-05T21:29:11&#43;08:00">
+        
+  
+  
+  
+  
+    2019年9月5日
+  
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>URL（Uniform Resource Locator）统一资源定位符。由 <a href="https://zh.wikipedia.org/wiki/蒂姆·伯纳斯-李">蒂姆·伯纳斯-李</a> 发明。它包含以下几个方面：</p>
+
+<ul>
+<li>传送协议；</li>
+<li>域名或IP；</li>
+<li>端口；</li>
+<li>路径；</li>
+<li>查询参数；</li>
+<li>锚点；</li>
+</ul>
+
+<p>示例图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/15.png" alt="15" /></p>
+
+<p>上述的这几个词都代表什么呢？一起来看一下吧！</p>
+
+<h2 id="ip与域名">IP与域名</h2>
+
+<p>什么是 <code>IP</code> ？ IP（<strong>I</strong>nternet <strong>P</strong>rotocol） 中文名，互联网协议，主要做两件事情：</p>
+
+<ol>
+<li>定位一台设备；</li>
+<li>封装数据报文，与其他设备交流；</li>
+</ol>
+
+<p>每一个在互联网中的用户都是有一个 <code>IP</code> 而 <code>IP</code> 又可分为 <code>内网IP</code> 与 <code>外网IP</code>， 如下图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/route.png" alt="路由器" /></p>
+
+<p><code>内网</code>与<code>外网</code> 通过路由器相隔开，内网不能直接访问外网。</p>
+
+<p>外网IP是由电信服务器负责分配，路由器链接电信服务器，如果我们重新启动路由器，外网IP也有可能被更改。当然也可以固定外网IP只是比较贵；</p>
+
+<p>内网IP是路由器分配给设备的地址，如：<code>192.168.1.1</code>；</p>
+
+<p>可以通过 <a href="http://ip38.com/">http://ip38.com/</a> 定位IP具体地址。</p>
+
+<h3 id="路由器功能">路由器功能</h3>
+
+<ul>
+<li>路由器链接内网与外网；</li>
+<li>内网设备可以互相访问，内网设备访问外网必须通过路由器；</li>
+<li>外网设备可以互相访问，但是不能访问内网；</li>
+<li>外网设备发送内网内容也需通过路由器；</li>
+</ul>
+
+<h3 id="特殊的ip">特殊的IP</h3>
+
+<ul>
+<li><code>127.0.0.1</code> 表示本机，如：本地搭建的服务器；</li>
+<li><code>localhost</code> 通过 <code>host</code> 指定的自己；
+
+<ul>
+<li><code>host</code> 可以指定本地域名，如：<code>127.0.0.1 jinchao1992</code> 那么就可以直接访问 <code>jinchao1992</code>;</li>
+<li><code>windows</code> <code>host</code> 文件位置：<code>C:\Windows\System32\drivers\etc\hosts</code>;</li>
+<li><code>macOS / Linux</code> <code>hosts 位于 /etc/hosts</code>；</li>
+</ul></li>
+</ul>
+
+<h3 id="域名">域名</h3>
+
+<p>域名就是对IP的别称，可以通过 <code>ping</code> 命令来查询当前域名的 <code>IP</code>  如下图：</p>
+
+<p><img src="https://jinchao1992.github.io/images/14.png" alt="14" /></p>
+
+<p>上述截图可以看出来，通过 <code>ping</code> 命令得到了 <code>baidu.com</code> 与 <code>qq.com</code> 的 <code>IP</code> 地址，当然它们的 <code>IP</code> 肯定不会采用了一个，原因如下：</p>
+
+<ul>
+<li>一个域名可以对应不同的 <code>IP</code>  用来做负载均衡，防止一台服务器扛不住多人次的访问；</li>
+<li>一个 <code>IP</code> 可以对应不同的域名这个叫做共享主机；</li>
+</ul>
+
+<p>那么域名和 <code>IP</code> 是如何对应起来的呢？答案是通过 <code>DNS(Domain Name System)</code> 域名系统；</p>
+
+<h4 id="域名等级">域名等级</h4>
+
+<ul>
+<li><code>com、cn等</code> 顶级域名</li>
+<li><code>baidu.com</code> 二级域名</li>
+<li><code>www.baidu.com</code> 三级域名<br /></li>
+</ul>
+
+<p>注意：<code>www.baidu.com</code> 与 <code>baidu.com</code> 是两个不同的域名，只不过都被指向了同一个地址。</p>
+
+<h4 id="nslookup">nslookup</h4>
+
+<p><strong>nslookup命令</strong>是常用域名查询工具，就是查DNS信息用的命令。如：<code>nslookup baidu.com</code> 解析结果如下：</p>
+
+<p><img src="https://jinchao1992.github.io/images/16.png" alt="16.png" /></p>
+
+<p>绿色框住的就是百度的DNS解析地址；</p>
+
+<h4 id="输入网址后发生了什么">输入网址后发生了什么？</h4>
+
+<blockquote>
+<p>当在浏览器输入网址后，浏览器会向电线/联通/移动提供的 DNS 服务器，询问网址对应的IP；</p>
+
+<p>电信/联通/移动会相应一个IP，当然这其中的步骤是很麻烦的；</p>
+
+<p>浏览器向对应的IP的<strong>80</strong>或者<strong>443</strong>端口发送请求；</p>
+
+<p>请求的内容是查看网址的首页；</p>
+</blockquote>
+
+<h2 id="端口">端口</h2>
+
+<p>端口是什么？一台服务器可以提供很多服务，每一个服务都对应一个号码，这个号码就是端口；端口总共 <code>65535</code> 个；</p>
+
+<h3 id="常用端口">常用端口：</h3>
+
+<ul>
+<li>HTTP 服务使用 <code>80</code> 端口；</li>
+<li>HTTPS 服务使用 <code>443</code> 端口；</li>
+<li>FTP 服务使用 <code>21</code> 端口；</li>
+</ul>
+
+<h3 id="端口使用规则">端口使用规则</h3>
+
+<ul>
+<li><code>0</code> 到 <code>1023</code> 号端口留给系统使用，只有拥有管理员权限，才能使用这 <code>1024</code> 个端口；</li>
+<li>其余的端口可以分配给用户使用；</li>
+<li>我们一般开发网页使用的是 <code>8888</code> 与 <code>8080</code> 端口；</li>
+<li>如果端口号被占用，只能换其他端口，两个端口不能共存；</li>
+</ul>
+
+<p><strong>记住一句话，上网必须拥有IP和端口两者缺一不可。</strong></p>
+
+<h2 id="路径">路径</h2>
+
+<p>路径的意思是，我们可以通过不同的网址路径访问不同的页面，如：</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML">https://developer.mozilla.org/zh-CN/docs/Web/HTML</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/css">https://developer.mozilla.org/zh-CN/docs/Web/css</a></li>
+</ul>
+
+<p>上述的路径是: <code>/zh-CN/docs/Web/HTML 与 /zh-CN/docs/Web/css</code>  可以看出来不同的路径看到的网页内容是有所不同的；</p>
+
+<p>问题：那如果是同一个页面呢，想看到不同的内容怎么办？答案：通过查询参数！</p>
+
+<h2 id="查询参数">查询参数</h2>
+
+<p>如下网址：</p>
+
+<ul>
+<li><a href="https://www.baidu.com/s?wd=hi">https://www.baidu.com/s?wd=hi</a></li>
+<li><a href="https://www.baidu.com/s?wd=hello">https://www.baidu.com/s?wd=hello</a></li>
+</ul>
+
+<p>访问百度同一个路径 <code>/s</code> 代表搜索 <code>wd=hi</code> 与 <code>wd=hello</code> 代表不同的查询参数，得到的网页是不同的；所以同一个页面可以用不同的查询参数显示不同的内容；</p>
+
+<p>问题：那同一个页面，同一个内容，不同的位置如何访问？答案：可以通过锚点</p>
+
+<h2 id="锚点">锚点</h2>
+
+<p>如下网址：</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/css#参考书">https://developer.mozilla.org/zh-CN/docs/Web/css#%E5%8F%82%E8%80%83%E4%B9%A6</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/css#CSS_开发工具">https://developer.mozilla.org/zh-CN/docs/Web/css#CSS_%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7</a></li>
+</ul>
+
+<p>上述网址同一个页面同一个内容，不同的位置可以通过不同的锚点进行设置。</p>
+
+<p><strong>注意：锚点不支持中文，中文会被解析为一段码，锚点不会传给服务器。</strong></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/url/">URL</a>
+
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/http/">HTTP</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" data-tooltip="CSS 层叠上下文">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/" data-tooltip="CSS 全解">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 靳超同学. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/09/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/" data-tooltip="CSS 层叠上下文">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/" data-tooltip="CSS 全解">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://jinchao1992.github.io/images/avatar.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">靳超同学</h4>
+    
+      <div id="about-card-bio">前端开发</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        前端开发工程师
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        北京
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://jinchao1992.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://jinchao1992.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/jinchao1992.github.io\/2019\/09\/url-%E6%B5%85%E6%9E%90\/';
+          
+            this.page.identifier = '\/2019\/09\/url-%E6%B5%85%E6%9E%90\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'valine';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

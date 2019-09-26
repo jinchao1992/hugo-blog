@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 小鱼儿的小站</title>
+    <link>https://jinchao1992.github.io/post/</link>
+    <description>Recent content in Posts on 小鱼儿的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Sep 2019 22:17:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://jinchao1992.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JS 数组对象</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 26 Sep 2019 22:17:15 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1/</guid>
+      <description>&lt;p&gt;数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 变量声明之Let与const</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E%E4%B9%8Blet%E4%B8%8Econst/</link>
+      <pubDate>Thu, 26 Sep 2019 22:14:27 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E%E4%B9%8Blet%E4%B8%8Econst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JS 数据类型与运算</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Sat, 21 Sep 2019 11:31:04 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/</guid>
+      <description>&lt;p&gt;数据为什么需要类型？1与&amp;rsquo;1&amp;rsquo;，两者都是一为什么要区分呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 三座大山之对象</title>
+      <link>https://jinchao1992.github.io/2019/09/javascript-%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%E4%B9%8B%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Sat, 21 Sep 2019 11:25:00 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/javascript-%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%E4%B9%8B%E5%AF%B9%E8%B1%A1/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Javascript&lt;/code&gt; 有七种数据类型，分别是： &lt;code&gt;number&lt;/code&gt;、&lt;code&gt;string&lt;/code&gt;、&lt;code&gt;boolean&lt;/code&gt;、&lt;code&gt;symbol&lt;/code&gt;、&lt;code&gt;undefined&lt;/code&gt;、&lt;code&gt;null&lt;/code&gt;、&lt;code&gt;object&lt;/code&gt;。其中除 &lt;code&gt;object&lt;/code&gt; 外都为简单类型，&lt;code&gt;object&lt;/code&gt; 为复杂类型。对象是 &lt;code&gt;JavaScript&lt;/code&gt; 中的难点，也是学好 &lt;code&gt;JavaScript&lt;/code&gt; 必须具备的知识，所以学好对象非常重要，那么一起来看吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 语法入门</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Fri, 13 Sep 2019 10:09:02 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;任何语言都有语法，那么先从语法入门来看看 &lt;code&gt;JS&lt;/code&gt; 的世界吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 内存世界</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E5%86%85%E5%AD%98%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Tue, 10 Sep 2019 23:03:06 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E5%86%85%E5%AD%98%E4%B8%96%E7%95%8C/</guid>
+      <description>&lt;p&gt;一起走进 &lt;code&gt;JavaScript&lt;/code&gt; 的世界。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS 层叠上下文</title>
+      <link>https://jinchao1992.github.io/2019/09/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <pubDate>Sat, 07 Sep 2019 17:43:43 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>URL 浅析</title>
+      <link>https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/</link>
+      <pubDate>Thu, 05 Sep 2019 21:29:11 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/url-%E6%B5%85%E6%9E%90/</guid>
+      <description>&lt;p&gt;URL（Uniform Resource Locator）统一资源定位符。由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/蒂姆·伯纳斯-李&#34;&gt;蒂姆·伯纳斯-李&lt;/a&gt; 发明。它包含以下几个方面：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS 全解</title>
+      <link>https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/</link>
+      <pubDate>Tue, 27 Aug 2019 23:40:47 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/css-%E5%85%A8%E8%A7%A3/</guid>
+      <description>&lt;p&gt;如果我们把 &lt;code&gt;HTML&lt;/code&gt; 理解为一栋房子的主体结构（毛坯房），那么 &lt;code&gt;CSS&lt;/code&gt; 就是我们用来装修房子的材料，我们可以用 &lt;code&gt;CSS&lt;/code&gt; 装修出各种华丽、大体、美观的房子（网页）。所以 &lt;code&gt;CSS&lt;/code&gt; 对于前端开发者来说也是必不可缺的一项软技能了，学好 &lt;code&gt;CSS&lt;/code&gt; 就显得尤为重要了。废话不多说一起来看看 &lt;code&gt;CSS&lt;/code&gt; 的一些重要知识点吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML 常用标签</title>
+      <link>https://jinchao1992.github.io/2019/08/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 22 Aug 2019 23:01:15 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>&lt;p&gt;最新的 &lt;code&gt;HTML5&lt;/code&gt; 里标签大概有 110 个，但是如果让我们学完 110 个的话，对于大多数人来说可能还是比较困难的。工作中常用的也就那么几个，接下来我们介绍下几个常用的 HTML 标签。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML 入门笔记1</title>
+      <link>https://jinchao1992.github.io/2019/08/html-%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sun, 18 Aug 2019 16:41:46 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/html-%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>&lt;p&gt;HTML（英语：HyperText Markup Language）超文本编辑语言。由&lt;strong&gt;万维网联盟（W3C）&lt;/strong&gt;负责维护，于1990年诞生，作者是：Time Berners-Lee（蒂姆·伯纳斯-李）, 也可称为”李爵士“。是整个网页的基础，是学好前端必备的一大知识模块，学好 &lt;code&gt;HTML&lt;/code&gt; 非常重要，并且我们要学会使用*&lt;strong&gt;语义化&lt;/strong&gt;的标签来书写 &lt;code&gt;HTML&lt;/code&gt; 标签。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS Margin 布局技巧</title>
+      <link>https://jinchao1992.github.io/2019/08/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Sun, 11 Aug 2019 14:28:00 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</guid>
+      <description>&lt;p&gt;&lt;code&gt;CSS&lt;/code&gt; 里有一个重要的东西，叫 &lt;code&gt;CSS&lt;/code&gt; 盒模型，它几乎能贯穿我们学习 &lt;code&gt;CSS&lt;/code&gt; 的整个阶段，如下图所示，就是我们所说的盒子模型：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS 以及常见的布局方式</title>
+      <link>https://jinchao1992.github.io/2019/08/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Sun, 11 Aug 2019 14:26:53 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/css-%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;CSS，层叠样式表(英语：&lt;strong&gt;C&lt;/strong&gt;ascading &lt;strong&gt;S&lt;/strong&gt;tyle &lt;strong&gt;S&lt;/strong&gt;heets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML 是什么</title>
+      <link>https://jinchao1992.github.io/2019/08/html-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Sun, 11 Aug 2019 14:25:39 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/html-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>&lt;p&gt;HTML (英语：HyperText Markup Language)  超文本编辑语言，是整个网站的基石，所以学好 &lt;code&gt;HTML&lt;/code&gt; 非常重要，并且我们要学会使用 &lt;strong&gt;语义化&lt;/strong&gt;的标签来书写 &lt;code&gt;HTML&lt;/code&gt; 标签，接下来我们来一一介绍 &lt;code&gt;HTML&lt;/code&gt; 标签。&lt;/p&gt;
+
+&lt;p&gt;首先来了解下 &lt;code&gt;W3C&lt;/code&gt; 和 &lt;code&gt;MDN&lt;/code&gt;是什么？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTTP入门</title>
+      <link>https://jinchao1992.github.io/2019/08/http%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 11 Aug 2019 14:24:02 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/http%E5%85%A5%E9%97%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>常用的git命令</title>
+      <link>https://jinchao1992.github.io/2019/08/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 11 Aug 2019 14:22:56 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;在工作中，经常用到 &lt;code&gt;git&lt;/code&gt; , 不管托管在 &lt;code&gt;gitHub&lt;/code&gt; 还是 &lt;code&gt;gitLab&lt;/code&gt; 或者 &lt;code&gt;码云&lt;/code&gt;，平时都是用可视化工具进行提交、推送，并没有用太多的命令进行操作。作为一个程序员，当然要学会用命令做东西啦，简单的记录下 &lt;code&gt;git&lt;/code&gt; 日常命令，如果需要了解更多，请点击文章最下方链接进行访问。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>什么是脚本</title>
+      <link>https://jinchao1992.github.io/2019/08/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Sun, 11 Aug 2019 14:22:13 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>命令行的基本操作</title>
+      <link>https://jinchao1992.github.io/2019/08/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sun, 11 Aug 2019 14:21:23 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <description>&lt;p&gt;命令行的基本操作&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>初始命令行</title>
+      <link>https://jinchao1992.github.io/2019/08/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+      <pubDate>Sun, 11 Aug 2019 14:20:13 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
+      <description>&lt;p&gt;命令行入门&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>计算机是怎么工作的</title>
+      <link>https://jinchao1992.github.io/2019/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
+      <pubDate>Sun, 11 Aug 2019 14:18:09 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

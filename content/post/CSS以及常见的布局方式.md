@@ -1,11 +1,15 @@
 ---
-title: "CSS以及常见的布局方式"
+title: "CSS 以及常见的布局方式"
 date: 2019-08-11T14:26:53+08:00
 draft: false
+tags:
+- CSS
+keywords:
+- CSS 入门笔记
 ---
-## CSS是什么？
-
 CSS，层叠样式表(英语：**C**ascading **S**tyle **S**heets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。
+
+<!--more-->
 
 ### CSS发展历史
 

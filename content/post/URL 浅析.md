@@ -2,8 +2,15 @@
 title: "URL 浅析"
 date: 2019-09-05T21:29:11+08:00
 draft: false
+tags:
+- URL
+- HTTP
+keywords:
+- URL 入门知识
 ---
 URL（Uniform Resource Locator）统一资源定位符。由 [蒂姆·伯纳斯-李](https://zh.wikipedia.org/wiki/蒂姆·伯纳斯-李) 发明。它包含以下几个方面：
+
+<!--more-->
 
 - 传送协议；
 - 域名或IP；

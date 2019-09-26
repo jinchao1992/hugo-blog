@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS 对象 on 小鱼儿的小站</title>
+    <link>https://jinchao1992.github.io/tags/js-%E5%AF%B9%E8%B1%A1/</link>
+    <description>Recent content in JS 对象 on 小鱼儿的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Sep 2019 22:17:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://jinchao1992.github.io/tags/js-%E5%AF%B9%E8%B1%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JS 数组对象</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 26 Sep 2019 22:17:15 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1/</guid>
+      <description>&lt;p&gt;数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 三座大山之对象</title>
+      <link>https://jinchao1992.github.io/2019/09/javascript-%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%E4%B9%8B%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Sat, 21 Sep 2019 11:25:00 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/javascript-%E4%B8%89%E5%BA%A7%E5%A4%A7%E5%B1%B1%E4%B9%8B%E5%AF%B9%E8%B1%A1/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Javascript&lt;/code&gt; 有七种数据类型，分别是： &lt;code&gt;number&lt;/code&gt;、&lt;code&gt;string&lt;/code&gt;、&lt;code&gt;boolean&lt;/code&gt;、&lt;code&gt;symbol&lt;/code&gt;、&lt;code&gt;undefined&lt;/code&gt;、&lt;code&gt;null&lt;/code&gt;、&lt;code&gt;object&lt;/code&gt;。其中除 &lt;code&gt;object&lt;/code&gt; 外都为简单类型，&lt;code&gt;object&lt;/code&gt; 为复杂类型。对象是 &lt;code&gt;JavaScript&lt;/code&gt; 中的难点，也是学好 &lt;code&gt;JavaScript&lt;/code&gt; 必须具备的知识，所以学好对象非常重要，那么一起来看吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

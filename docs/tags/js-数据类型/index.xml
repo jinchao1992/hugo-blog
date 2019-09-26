@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS 数据类型 on 小鱼儿的小站</title>
+    <link>https://jinchao1992.github.io/tags/js-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+    <description>Recent content in JS 数据类型 on 小鱼儿的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Sep 2019 11:31:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://jinchao1992.github.io/tags/js-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JS 数据类型与运算</title>
+      <link>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Sat, 21 Sep 2019 11:31:04 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97/</guid>
+      <description>&lt;p&gt;数据为什么需要类型？1与&amp;rsquo;1&amp;rsquo;，两者都是一为什么要区分呢？&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

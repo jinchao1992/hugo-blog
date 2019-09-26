@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on 小鱼儿的小站</title>
+    <link>https://jinchao1992.github.io/tags/git/</link>
+    <description>Recent content in git on 小鱼儿的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 11 Aug 2019 14:22:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://jinchao1992.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常用的git命令</title>
+      <link>https://jinchao1992.github.io/2019/08/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 11 Aug 2019 14:22:56 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/08/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;在工作中，经常用到 &lt;code&gt;git&lt;/code&gt; , 不管托管在 &lt;code&gt;gitHub&lt;/code&gt; 还是 &lt;code&gt;gitLab&lt;/code&gt; 或者 &lt;code&gt;码云&lt;/code&gt;，平时都是用可视化工具进行提交、推送，并没有用太多的命令进行操作。作为一个程序员，当然要学会用命令做东西啦，简单的记录下 &lt;code&gt;git&lt;/code&gt; 日常命令，如果需要了解更多，请点击文章最下方链接进行访问。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
