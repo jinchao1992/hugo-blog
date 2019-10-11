@@ -32,7 +32,7 @@ keywords:
 
 * 在硬盘中创建安装目录，例如：`D:\Hugo`，把压缩包解压，并加入到 `PATH` 中，如下图：
 
-  <img src="../images/hugo-01.png" style="zoom:75%;" />
+  <img src="/images/hugo-01.png" style="zoom:75%;" />
 
 * 在终端中运行 `hugo version` 查看 `hugo版本`，如果看到有 如下字样：`Hugo Static Site Generator v0.58.0-64D8BF1E windows/amd64 BuildDate: 2019-09-04T15:43:46Z` 代表 `hugo` 安装成功
 
