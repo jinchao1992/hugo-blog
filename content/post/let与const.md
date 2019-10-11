@@ -1,5 +1,5 @@
 ---
-title: "JS 变量声明之Let与const"
+title: "JS 变量声明之let与const"
 date: 2019-09-26T22:14:27+08:00
 # categories:
 # - JS

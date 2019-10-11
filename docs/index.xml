@@ -6,10 +6,28 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Sep 2019 22:17:15 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2019 21:31:29 +0800</lastBuildDate>
     
 	<atom:link href="https://jinchao1992.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何使用Hugo和GitPage搭建个人博客</title>
+      <link>https://jinchao1992.github.io/2019/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgitpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 11 Oct 2019 21:31:29 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgitpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt; 是一种静态网站生成器。非常适合搭建个人静态博客。因为 &lt;code&gt;hugo&lt;/code&gt; 的生成速度很快，不管是运行还是打包，所以将个人的博客用 &lt;code&gt;hugo&lt;/code&gt; 搭建是非常不错的选择。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 函数对象</title>
+      <link>https://jinchao1992.github.io/2019/10/js-%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Sat, 05 Oct 2019 10:26:44 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/js-%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1/</guid>
+      <description>&lt;p&gt;函数是一段可以反复调用的代码块。函数能接收输入的参数，不同的参数会返回不同的值。函数跟数组一样也是一种特殊的对象。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>JS 数组对象</title>
@@ -21,7 +39,7 @@
     </item>
     
     <item>
-      <title>JS 变量声明之Let与const</title>
+      <title>JS 变量声明之let与const</title>
       <link>https://jinchao1992.github.io/2019/09/js-%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E%E4%B9%8Blet%E4%B8%8Econst/</link>
       <pubDate>Thu, 26 Sep 2019 22:14:27 +0800</pubDate>
       
