@@ -251,8 +251,10 @@ let arr = str.split(','); // 通过 split 分割数组
 let arr2 = Array.from('123'); // [1,2,3], es6 新增方法
 </code></pre>
 
+<h4 id="array-from是什么">Array.from是什么？</h4>
+
 <blockquote>
-<p><code>Array.from</code>是什么？<code>Array.from</code> 方法用于将两类对象转为真正的数组：类似数组的对象和可便利的对象。</p>
+<p><code>Array.from</code> 方法用于将两类对象转为真正的数组：类似数组的对象和可便利的对象。</p>
 </blockquote>
 
 <pre><code class="language-js">let arrayLike = {
@@ -537,6 +539,33 @@ console.log(arr); // [101, 11]
 </code></pre>
 
 <h2 id="数组变换">数组变换</h2>
+
+<ul>
+<li><p><code>map()</code> 方法，将数组的所有成员依次传入参数函数，然后每一次的执行结果组成一个新数组返回。<strong>返回的数组中的元素并不会减少；</strong> 注意：该方法并不会更改原始数组！</p>
+
+<pre><code class="language-js">let arr = [1, 2, 3];
+let arr2 = arr.map(item =&gt; item * 2)
+console.log(arr2); // [2, 4 ,6]
+console.log(arr); // [1, 2, 3]
+</code></pre></li>
+
+<li><p><code>filter()</code> 方法，用于过滤数组成员，满足条件的成员组成一个新的数组返回，如果条件不满足则返回空数组。 <strong>返回的数组元素会减少；</strong> 注意：该方法不会改变原始数组！</p>
+
+<pre><code class="language-js">let arr = [1, 2, 3, 4, 5, 6];
+let arr2 = arr.filter(item =&gt; item % 2 === 0)
+console.log(arr2); // [2, 4 ,6]
+console.log(arr); // [1, 2, 3, 4, 5, 6]
+  
+let arrBooolean = [0, 1, 'a', false, '', undefined, null, NaN]
+let arrNew = arrBooolean.filter(Boolean); // [1, a]
+</code></pre></li>
+
+<li><p><code>reduce()</code> 方法，该方法会依次处理数组的每一个成员，最终累计一个值。接收两个参数，第一个参数时回调函数，第二个参数则是初始值。该方法比较复杂，推荐一篇文章可以延伸阅读 <a href="https://juejin.im/post/5bab8a9c6fb9a05d0e2e6bf0">reduce 实用指南</a>。</p></li>
+</ul>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p><a href="http://wangdoc.com/javascript/stdlib/array.html">阮一峰网道教程 Array 对象</a></p>
               
             </div>
           </div>

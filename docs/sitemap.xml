@@ -3,14 +3,75 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jinchao1992.github.io/2019/11/js-%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <lastmod>2019-11-04T15:12:39+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jinchao1992.github.io/post/</loc>
-    <lastmod>2019-10-11T21:31:29+08:00</lastmod>
+    <lastmod>2019-11-04T15:12:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jinchao1992.github.io/tags/</loc>
-    <lastmod>2019-10-11T21:31:29+08:00</lastmod>
+    <lastmod>2019-11-04T15:12:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/</loc>
+    <lastmod>2019-11-04T15:12:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <lastmod>2019-11-04T15:12:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2019-10-26T00:06:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A82/</loc>
+    <lastmod>2019-10-26T00:06:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/</loc>
+    <lastmod>2019-10-26T00:04:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/tags/js/</loc>
+    <lastmod>2019-10-14T23:02:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/</loc>
+    <lastmod>2019-10-14T23:02:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/tags/css3/</loc>
+    <lastmod>2019-10-14T22:54:11+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/2019/10/css3%E5%8A%A8%E7%94%BB%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B%E4%BB%A5%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2019-10-14T22:54:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/tags/tag/</loc>
+    <lastmod>2019-10-14T22:54:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -23,18 +84,6 @@
   <url>
     <loc>https://jinchao1992.github.io/2019/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgitpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-10-11T21:31:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jinchao1992.github.io/</loc>
-    <lastmod>2019-10-11T21:31:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jinchao1992.github.io/tags/js/</loc>
-    <lastmod>2019-10-05T10:26:44+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

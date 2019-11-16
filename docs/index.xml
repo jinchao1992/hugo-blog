@@ -6,10 +6,57 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 11 Oct 2019 21:31:29 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2019 15:12:39 +0800</lastBuildDate>
     
 	<atom:link href="https://jinchao1992.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 运算符</title>
+      <link>https://jinchao1992.github.io/2019/11/js-%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Mon, 04 Nov 2019 15:12:39 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/11/js-%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>&lt;p&gt;什么是运算符？
+&amp;gt; 运算符是处理数据的基本方法，用来从现有的值得到新的值。
+&lt;code&gt;JavaScript&lt;/code&gt; 中提供了多种的运算符，可以分为几大部门，一起来看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>算法入门2</title>
+      <link>https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A82/</link>
+      <pubDate>Sat, 26 Oct 2019 00:06:30 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A82/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法入门1</title>
+      <link>https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/</link>
+      <pubDate>Sat, 26 Oct 2019 00:04:35 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>深入理解JS原型</title>
+      <link>https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/</link>
+      <pubDate>Mon, 14 Oct 2019 23:02:36 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/</guid>
+      <description>&lt;p&gt;&lt;code&gt;JS&lt;/code&gt; 原型作为 &lt;code&gt;JS&lt;/code&gt; 世界中的三座大山之一，如果要搞明白的话着实是要费一些劲的。因为它存在了很多概念，这些概念又来回颠倒，所以导致我们傻傻分不清楚。那么这篇文章就是从新整理原型的知识，方便之后反复学习。因为 &lt;code&gt;JS&lt;/code&gt; 是复杂的，就是需要反反复复的学习，并且需要结合实践来学习。话不多说，开始走进原型的世界。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS3动画使用简介以及浏览器渲染原理</title>
+      <link>https://jinchao1992.github.io/2019/10/css3%E5%8A%A8%E7%94%BB%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B%E4%BB%A5%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Mon, 14 Oct 2019 22:54:11 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/css3%E5%8A%A8%E7%94%BB%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B%E4%BB%A5%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/</guid>
+      <description>&lt;p&gt;&lt;code&gt;CSS3&lt;/code&gt; 相关的动画属性分别为： &lt;code&gt;transition&lt;/code&gt;、&lt;code&gt;transform&lt;/code&gt; 、&lt;code&gt;animation&lt;/code&gt; 中文对应的分别为过渡、变换、动画。三者结合就构成光彩夺目的 &lt;code&gt;CSS3&lt;/code&gt; 动画世界。当然我们本次的学习只是粗略的认识一下这三个东西，如果需要在 &lt;code&gt;CSS3&lt;/code&gt; 动画上面有更高的层次，则考验的不仅仅是我们的 &lt;code&gt;CSS&lt;/code&gt; 知识啦。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>如何使用Hugo和GitPage搭建个人博客</title>
